@@ -20,7 +20,9 @@ actually says, not a remembered profile.
   Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers. Go to
   their career pages, not aggregators, where the connector has no coverage.
 
-Skip any job ID already in the log.
+Skip anything already in the log — match on **title + company**, not job ID. Indeed's `JOBSEARCH_*`
+IDs are assigned per search session, so the same posting gets a new ID every run (standing decision
+10). Log the ID anyway; it is the handle `get_job_details` needs within a run.
 
 **STEP 3 — Judge.** For anything plausible, pull the **full job description** (`get_job_details`,
 or fetch the posting) before judging. Never judge on a title. For each job you keep, name the

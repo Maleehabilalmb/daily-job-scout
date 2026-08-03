@@ -52,7 +52,7 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Local sync | Startup-folder VBS → `references/pull.bat` | on-logon Task Scheduler needs admin; Startup does not |
 
 ## Success criteria
-Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown job IDs ·
+Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown postings ·
 every run lands on `master` so `git pull` updates the laptop · checker drops reported, never hidden.
 
 ## Next session

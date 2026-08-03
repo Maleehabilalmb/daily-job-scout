@@ -47,6 +47,12 @@ A shortlist rationale must be traceable to a line below.
 7. **Never invent experience.** No rationale may imply a job she has not held.
 8. **Scarcity is not fit.** If nothing qualifies, return an empty list and say so plainly.
 9. **Cap output at 3–5 jobs per beat.** Best fits only.
+10. **Dedup on title + company, never on job ID alone.** `JOBSEARCH_*` numbers are assigned per
+    search session, not per posting — the same Taraz role was `JOBSEARCH_1` on 08-01 and
+    `JOBSEARCH_14` on 08-03. Treating the ID as stable makes dedup fail silently and re-shows
+    everything. Log the ID anyway (it is the handle for `get_job_details` within a run), but match
+    against the log on title + company. Found by beat 2; landed by hand, since the routine may
+    propose rule changes but never merges them.
 
 ---
 
