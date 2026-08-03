@@ -16,7 +16,7 @@ This file holds only what is *undone*. For what the system is and where each fil
 
       Pick **Daily Job Scout** (`trig_013RTh3ZRmfxMn8PWPauJAnD`). This runs the whole cycle — it is a
       real beat, not a dry run: it searches, judges, and writes real log entries. **Pass =** a new
-      commit on `main` authored by the cloud session. **If it fails:** the checkout is read-only.
+      commit on `master` authored by the cloud session. **If it fails:** the checkout is read-only.
       Options then — (a) give the routine a PAT with `repo` scope, (b) have it open a PR instead of
       pushing, (c) have it print the log diff and apply it locally. Pick one and record the choice in
       `specs/spec.md` under Decisions.

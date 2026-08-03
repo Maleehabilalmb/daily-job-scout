@@ -39,9 +39,10 @@ reasons into your output.
   from it will be re-shown tomorrow.
 - Add a beat-history entry: searches run, counts, draft shortlist, what the checker dropped and why,
   what was delivered.
-- Commit and push those log changes straight to `main`.
+- Commit and push those log changes straight to `master` — that is the repo's default branch and the
+  one you cloned. There is no `main` branch; do not create one.
 - If you believe the candidate fact sheet, the standing decisions, or `specs/spec.md` should change, do
-  **not** push that to `main` — open a PR with your reasoning in the description, and never merge
+  **not** push that to `master` — open a PR with your reasoning in the description, and never merge
   it yourself.
 
 **STEP 6 — Report.** 3–5 jobs maximum, best fits only. One sentence on why each fits, one sentence
