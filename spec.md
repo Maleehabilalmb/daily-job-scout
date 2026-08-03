@@ -36,7 +36,6 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Job data | Indeed MCP connector | `search_jobs`, `get_job_details`, `get_resume` |
 | Lane B sourcing | WebSearch + WebFetch | Greenhouse / Lever / Workday career pages |
 | Checker | Agent tool subagent | separate adversarial pass, not self-review |
-| State | Markdown in git | append-only job table = the dedup spine |
 | VCS | git + `gh` CLI over HTTPS | routine needs push rights on a private repo |
 | Local sync | Task Scheduler at logon | Git Credential Manager holds the token; pulls unattended |
 
