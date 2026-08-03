@@ -10,12 +10,12 @@ on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` 
 | `specs/spec.md` | this file — what the system is, how it is built, and why |
 | `references/prompt.md` | the instructions the routine runs, and how local sync works |
 | `references/task.md` | what is still unproven, and the next step to prove it |
+| `references/outcome.md` | finished goals and what each proved — results land here, not in `task.md` |
 | `references/job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `references/pull.bat` | the local sync script |
 | `assets/FDE-CV/` | CV variants the routine reads at run time |
 
-Each fact lives in exactly one of these — they point at each other rather than repeat. **Any future
-file goes in `references/`**, unless it is a spec (`specs/`) or a binary the routine reads (`assets/`).
+Each fact lives in exactly one of these — they point at each other rather than repeat. **Any future file goes in `references/`**, unless it is a spec (`specs/`) or a binary the routine reads (`assets/`).
 
 ## Architecture
 GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of truth.
