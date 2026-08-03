@@ -39,13 +39,13 @@ what the system is and where each file lives, read `specs/spec.md` — start wit
 
 **Delivered: 1 job** (`JOBSEARCH_38`, AL GHANI Medical) against a 3–5 cap. Not padded — rule 8 held.
 
+- [x] **12. PR #1 closed as superseded**, branch deleted, with a comment recording that its content
+      was landed by hand in `c684bbe` — it was written against the pre-rename `master`, and its two
+      Decisions rows plus the reworded success criteria would have pushed `specs/spec.md` past its
+      60-line limit, so the wording was compressed on the way in.
+
 ## Open
 
-- [ ] **12. Close PR #1.** Its content was landed by hand instead of merged, because it was written
-      against the pre-rename `master` and its two new Decisions rows plus the reworded success
-      criteria would have pushed `specs/spec.md` past its 60-line limit. Everything it proposed is
-      now on `main`: standing decision 10, the lane B rewrite, both Decisions rows, the corrected
-      success criterion. Close it with a comment saying so — do not merge, or it will conflict.
 - [ ] **5. Prove dedup across beats.** Beat 2 found that **Indeed job IDs are per-session, not per
       posting** (Taraz was `JOBSEARCH_1` on 08-01 and `JOBSEARCH_14` on 08-03) — dedup on ID alone
       fails silently. Standing decision 10 and `references/prompt.md` step 2 now say match on
