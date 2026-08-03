@@ -9,7 +9,7 @@ on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` 
 |---|---|
 | `specs/spec.md` | this file — what the system is, how it is built, and why |
 | `references/prompt.md` | the instructions the routine runs, and how local sync works |
-| `references/task.md` | what is still unproven, and the next step to prove it |
+| `references/task.md` | history — the beat test that proved the cloud cycle; not a running work log |
 | `references/outcome.md` | finished goals and what each proved — results land here, not in `task.md` |
 | `references/job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `references/pull.bat` | the local sync script |
