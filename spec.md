@@ -1,8 +1,8 @@
 # Spec — Daily Job Scout (cloud routine + GitHub spine)
 
-## Problem
-Run locally (Cowork, then Task Scheduler), the scout was skipped whenever the laptop slept.
-A cloud routine survives sleep but cannot see `D:\` — so the spine must live where both reach.
+## Goal
+Scout Forward Deployed Engineer and client-facing delivery roles every day without the laptop being
+on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` when the laptop wakes.
 
 ## Architecture
 GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of truth.
@@ -10,6 +10,7 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 - **Laptop** (`D:\SIR-AMMAR\Indeed`) is a clone; `git pull` on boot brings the run down.
 - **Write mode:** log entries go straight to `main`. Any change to the fact sheet, standing
   decisions or this spec opens a PR instead — and the routine never merges its own PR.
+- **Local CLI is wired:** `gh` authenticated as `Maleehabilalmb` (scopes `repo`, `read:org`, `gist`); this folder is a clone with `origin` set, so `git pull` / `gh` work as-is.
 
 ## Decisions (and why)
 | Decision | Why |
@@ -27,7 +28,6 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Layer | Choice | What to read up on |
 |---|---|---|
 | Scheduler | claude.ai routines (cloud cron) | `/schedule`; cron in PKT; no local machine |
-| Agent runtime | Claude Code, Opus, headless | prompt lives in the routine, not a local file |
 | Job data | Indeed MCP connector | `search_jobs`, `get_job_details`, `get_resume` |
 | Lane B sourcing | WebSearch + WebFetch | Greenhouse / Lever / Workday career pages |
 | Checker | Agent tool subagent | separate adversarial pass, not self-review |
@@ -35,11 +35,10 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | VCS | git + `gh` CLI over HTTPS | routine needs push rights on a private repo |
 
 ## Candidate context
-Maleeha Bilal — career changer targeting **Forward Deployed Engineer** / client-facing delivery,
-junior full-stack (TypeScript, React, Next.js) as fallback. Shipped, not coursework: Next.js site
-on Vercel, React Native + Expo + Firebase app in closed testing, Playwright + MCP QA harness, n8n
-on Oracle Cloud ARM64. No CS degree, no paid SWE role. A flagship FDE demo app is in progress and
-is **not** evidence until it is live.
+Maleeha Bilal — career changer; junior full-stack (TypeScript, React, Next.js) is the fallback lane.
+Shipped, not coursework: Next.js site on Vercel, React Native + Expo + Firebase app in closed testing,
+Playwright + MCP QA harness, n8n on Oracle Cloud ARM64. No CS degree, no paid SWE role. A flagship
+FDE demo app is in progress — **not** evidence until live.
 
 ## Search lanes
 - **A — Pakistan + remote:** Indeed PK connector.
@@ -57,5 +56,4 @@ is **not** evidence until it is live.
 6. Output 3–5 jobs max: one sentence on fit, one on what the checker verified or rejected.
 
 ## Success criteria
-Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown job IDs ·
-every run lands on `main` so `git pull` updates the laptop · checker drops reported, never hidden.
+Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown job IDs · every run lands on `main` so `git pull` updates the laptop · checker drops reported, never hidden.
