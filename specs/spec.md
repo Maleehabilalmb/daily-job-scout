@@ -11,6 +11,7 @@ on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` 
 | `references/prompt.md` | the instructions the routine runs, and how local sync works |
 | `references/task.md` | history — the beat test that proved the cloud cycle; not a running work log |
 | `references/outcome.md` | finished goals and what each proved — results land here, not in `task.md` |
+| `references/plan.md` | how this routine was built and debugged — seed for a reusable skill |
 | `references/job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `references/pull.bat` | the local sync script |
 | `assets/FDE-CV/` | CV variants the routine reads at run time |
@@ -54,6 +55,5 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Local sync | Startup-folder VBS → `references/pull.bat` | on-logon Task Scheduler needs admin; Startup does not |
 
 ## Success criteria
-Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown
-**title + company** pairs · every run lands on `main` so `git pull` updates the laptop · checker
-drops reported, never hidden.
+Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown **title +
+company** pairs · every run lands on `main` so `git pull` updates the laptop · checker drops reported, never hidden.
