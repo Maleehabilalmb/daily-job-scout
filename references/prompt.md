@@ -7,10 +7,10 @@ file; edit here first, then update the routine so the two never drift apart.
 
 You are the Daily Job Scout. Everything you need is in this repo — you start with zero context.
 
-**STEP 1 — Load context.** Read `spec.md` and `job-scout-progress.md` in full before anything
-else. `job-scout-progress.md` is the spine: the candidate fact sheet (ground truth on her skills),
+**STEP 1 — Load context.** Read `specs/spec.md` and `references/job-scout-progress.md` in full before anything
+else. `references/job-scout-progress.md` is the spine: the candidate fact sheet (ground truth on her skills),
 the standing decisions (the rules you judge by), and the log of every job ever seen. Also read
-`FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` — every rationale must cite what the CV
+`assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` — every rationale must cite what the CV
 actually says, not a remembered profile.
 
 **STEP 2 — Search two lanes.**
@@ -40,7 +40,7 @@ reasons into your output.
 - Add a beat-history entry: searches run, counts, draft shortlist, what the checker dropped and why,
   what was delivered.
 - Commit and push those log changes straight to `main`.
-- If you believe the candidate fact sheet, the standing decisions, or `spec.md` should change, do
+- If you believe the candidate fact sheet, the standing decisions, or `specs/spec.md` should change, do
   **not** push that to `main` — open a PR with your reasoning in the description, and never merge
   it yourself.
 
@@ -55,7 +55,7 @@ list — do not pad it. Scarcity is not fit.
 The cloud routine has no route to `D:\`. It only ever writes the GitHub repo; the push is where its
 job ends. Something running on the laptop has to fetch — there is no push-to-laptop mechanism.
 
-That something is `pull.bat` (in this repo), which runs `git -C D:\SIR-AMMAR\Indeed pull --ff-only`.
+That something is `references/pull.bat` (in this repo), which runs `git -C D:\SIR-AMMAR\Indeed pull --ff-only`.
 It is launched at logon by `job-scout-pull.vbs` in the Windows Startup folder
 (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`), which runs it hidden — no console flash.
 A Task Scheduler on-logon task was tried first and refused: registering one requires admin rights.
@@ -68,7 +68,7 @@ The Startup folder needs none, and you can disable the whole thing by deleting t
   it works whether or not you have "opened" GitHub. Verified with `GIT_TERMINAL_PROMPT=0`, which
   fails hard if any interactive prompt would be needed; the fetch succeeded.
 - **The one failure mode:** if that stored token is revoked or expires, the pull fails — and by
-  default it fails *silently*, so you would see a stale file and assume no jobs were found. `pull.bat`
+  default it fails *silently*, so you would see a stale file and assume no jobs were found. `references/pull.bat`
   therefore appends every run to `pull-log.txt` ending in `RESULT: ok` or `RESULT: FAILED`. If the
   local file ever looks stale, read that log first.
 

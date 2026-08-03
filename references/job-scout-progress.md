@@ -1,6 +1,6 @@
 # Daily Job Scout — Progress Log (spine)
 
-**Candidate:** Maleeha Bilal — CV at `FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` (A4 default; US-Letter and Software-Engineer variants in the same folder)
+**Candidate:** Maleeha Bilal — CV at `assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` (A4 default; US-Letter and Software-Engineer variants in the same folder)
 **Target role:** Forward Deployed Engineer / Solutions Engineer / client-facing delivery engineer — plus junior full-stack (TypeScript/React/Next.js) as the fallback lane.
 **Search lanes:** (A) Pakistan + remote via the Indeed PK connector · (B) international FDE track — Palantir, Databricks, Google Cloud (PSO/Customer Engineering), Salesforce, and comparable delivery-engineering employers.
 **Visa:** requires sponsorship. Postings silent on sponsorship are **still shortlisted**, flagged `sponsorship: unverified`.
@@ -84,7 +84,7 @@ A shortlist rationale must be traceable to a line below.
 - **Invalidated 2026-08-03.** The fact sheet used that day recorded no programming experience and no shipped projects, which was wrong. Six entries reopened above.
 
 ### 2026-08-03 — Spine rebuilt (no search run)
-- Fact sheet replaced with the Forward Deployed Engineer CV (`FDE-CV/`): shipped Next.js, React Native, Playwright, Docker/Oracle Cloud and MCP work.
+- Fact sheet replaced with the Forward Deployed Engineer CV (`assets/FDE-CV/`): shipped Next.js, React Native, Playwright, Docker/Oracle Cloud and MCP work.
 - Added the international FDE lane (Palantir, Databricks, Google Cloud, Salesforce) alongside Indeed PK.
 - Sponsorship policy set to flag-not-filter. Standing decisions rewritten around demonstrated delivery.
-- Repo moved to GitHub as the shared spine so the cloud routine and this laptop stay in sync — see `spec.md`.
+- Repo moved to GitHub as the shared spine so the cloud routine and this laptop stay in sync — see `specs/spec.md`.
