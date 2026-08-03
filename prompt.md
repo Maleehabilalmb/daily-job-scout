@@ -55,17 +55,21 @@ list — do not pad it. Scarcity is not fit.
 The cloud routine has no route to `D:\`. It only ever writes the GitHub repo; the push is where its
 job ends. Something running on the laptop has to fetch — there is no push-to-laptop mechanism.
 
-That something is a Windows Task Scheduler task, **Job Scout Pull**, running
-`git -C D:\SIR-AMMAR\Indeed pull --ff-only`:
+That something is `pull.bat` (in this repo), which runs `git -C D:\SIR-AMMAR\Indeed pull --ff-only`.
+It is launched at logon by `job-scout-pull.vbs` in the Windows Startup folder
+(`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`), which runs it hidden — no console flash.
+A Task Scheduler on-logon task was tried first and refused: registering one requires admin rights.
+The Startup folder needs none, and you can disable the whole thing by deleting that one `.vbs`.
 
-- **Windows logon is the trigger.** You sign into Windows, the task fires. GitHub has nothing to do
-  with the trigger.
+- **Windows logon is the trigger.** You sign into Windows, it fires. GitHub has nothing to do with
+  the trigger.
 - **GitHub auth is already stored.** `credential.helper` is `manager` (Git Credential Manager),
   holding the token `gh` set up. `git pull` reads it silently — no browser, no login, no prompt, and
   it works whether or not you have "opened" GitHub. Verified with `GIT_TERMINAL_PROMPT=0`, which
   fails hard if any interactive prompt would be needed; the fetch succeeded.
 - **The one failure mode:** if that stored token is revoked or expires, the pull fails — and by
-  default it fails *silently*, so you would see a stale file and assume no jobs were found. The task
-  therefore appends its output to `pull-log.txt`, so a failure is visible rather than invisible.
+  default it fails *silently*, so you would see a stale file and assume no jobs were found. `pull.bat`
+  therefore appends every run to `pull-log.txt` ending in `RESULT: ok` or `RESULT: FAILED`. If the
+  local file ever looks stale, read that log first.
 
 Missed days are not lost: beats accumulate in the repo and all land on the next successful pull.

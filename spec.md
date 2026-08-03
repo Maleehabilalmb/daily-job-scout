@@ -7,9 +7,9 @@ on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` 
 ## Architecture
 GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of truth.
 - **Cloud routine** (claude.ai routines, 09:00 PKT daily) clones it, runs the beat, commits, pushes.
-- **Laptop** (`D:\SIR-AMMAR\Indeed`) is a clone. The routine never writes `D:\` — a Windows
-  Task Scheduler logon task, `Job Scout Pull`, runs `git pull --ff-only` so the local file
-  updates on wake. Missed days accumulate in the repo and land on the next pull.
+- **Laptop** (`D:\SIR-AMMAR\Indeed`) is a clone. The routine never writes `D:\` — a Startup-folder
+  script (`job-scout-pull.vbs` → `pull.bat`) runs `git pull --ff-only` hidden at logon and logs to
+  `pull-log.txt`. Missed days accumulate in the repo and land on the next pull.
 - **Routine prompt** lives in `prompt.md` — the routine was created from it. Edit that file
   first, then update the routine, so the two never drift.
 - **Write mode:** log entries go straight to `main`. Any change to the fact sheet, standing
@@ -37,7 +37,7 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Lane B sourcing | WebSearch + WebFetch | Greenhouse / Lever / Workday career pages |
 | Checker | Agent tool subagent | separate adversarial pass, not self-review |
 | VCS | git + `gh` CLI over HTTPS | routine needs push rights on a private repo |
-| Local sync | Task Scheduler at logon | Git Credential Manager holds the token; pulls unattended |
+| Local sync | Startup-folder VBS → `pull.bat` | on-logon Task Scheduler needs admin; Startup does not |
 
 ## Candidate context
 Maleeha Bilal — career changer; junior full-stack (TypeScript, React, Next.js) is the fallback lane.
