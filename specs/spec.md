@@ -11,7 +11,7 @@ on. The routine writes the repo; `D:\SIR-AMMAR\Indeed` catches up on `git pull` 
 | `references/prompt.md` | the instructions the routine runs, and how local sync works |
 | `references/task.md` | history — the beat test that proved the cloud cycle; not a running work log |
 | `references/outcome.md` | finished goals and what each proved — results land here, not in `task.md` |
-| `references/plan.md` | how this routine was built and debugged — seed for a reusable skill |
+| `references/plan.md` | how this routine was built and debugged — seed for a reusable plugin |
 | `references/job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `references/pull.bat` | the local sync script |
 | `assets/FDE-CV/` | CV variants the routine reads at run time |

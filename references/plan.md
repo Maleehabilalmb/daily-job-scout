@@ -27,3 +27,26 @@ rationalises. Startup folder over an on-logon task, which needs admin.
 **The FDE lesson.** Every fix came from an artifact — a commit hash, a 403, an ID that changed.
 Diagnose from evidence, correct the spec not the symptom, record what happened rather than what was
 expected.
+
+---
+
+## Next — package this as a claude.ai plugin (decided 2026-08-03, build tomorrow)
+
+**Name:** `Claude-Routine-Trouble-Shooter`. One plugin covering both halves — creating a claude.ai
+cloud routine, and diagnosing one that misbehaves.
+
+**Home: a new public repo**, not this one. `daily-job-scout` is private and carries the CV, contact
+details and the rejection log; it can neither be shown to an employer nor installed from without a
+token. The plugin's content is method, so nothing is lost by separating it.
+
+**Shape:** plugin root holds `.claude-plugin/plugin.json` (name, description, version, author) and
+`skills/<name>/SKILL.md` — never put `skills/` inside `.claude-plugin/`. A
+`.claude-plugin/marketplace.json` at the repo root makes it installable with
+`/plugin marketplace add <owner>/<repo>`, then `/plugin install`. Plugins installed this way are
+available in claude.ai chat, Claude Desktop and Cowork; skills are namespaced
+`/claude-routine-trouble-shooter:<skill>`.
+
+**Build loop:** `claude --plugin-dir ./Claude-Routine-Trouble-Shooter` to test without installing,
+`/reload-plugins` after edits, `claude plugin validate ./<dir>` before publishing.
+
+**Source material:** the four problems and the choices above — each one is a diagnostic rule.
