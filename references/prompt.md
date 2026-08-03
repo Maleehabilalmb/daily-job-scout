@@ -16,9 +16,13 @@ actually says, not a remembered profile.
 **STEP 2 — Search two lanes.**
 - **Lane A (Indeed connector):** Forward Deployed Engineer, solutions engineer, implementation and
   delivery engineer, and junior full-stack (TypeScript / React / Next.js) roles — Pakistan and remote.
-- **Lane B (WebSearch / WebFetch):** forward-deployed and delivery-engineering roles at Palantir,
-  Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers. Go to
-  their career pages, not aggregators, where the connector has no coverage.
+- **Lane B (international FDE track):** forward-deployed and delivery-engineering roles at Palantir,
+  Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers. Run
+  this **through the Indeed connector's remote US / GB search** (`forward deployed engineer solutions
+  engineer`, `implementation consultant onboarding engineer SaaS`). Their own career pages —
+  `palantir.com/careers`, `jobs.lever.co/palantir`, `databricks.com/company/careers` — return **HTTP
+  403** to WebFetch from the cloud; verified 2026-08-03. Still run WebSearch to spot new employers,
+  but never treat a 403 as "nothing found".
 
 Skip anything already in the log — match on **title + company**, not job ID. Indeed's `JOBSEARCH_*`
 IDs are assigned per search session, so the same posting gets a new ID every run (standing decision
@@ -41,10 +45,10 @@ reasons into your output.
   from it will be re-shown tomorrow.
 - Add a beat-history entry: searches run, counts, draft shortlist, what the checker dropped and why,
   what was delivered.
-- Commit and push those log changes straight to `master` — that is the repo's default branch and the
-  one you cloned. There is no `main` branch; do not create one.
+- Commit and push those log changes straight to `main` — the repo's default branch, and the one you
+  cloned. Do not create any other long-lived branch.
 - If you believe the candidate fact sheet, the standing decisions, or `specs/spec.md` should change, do
-  **not** push that to `master` — open a PR with your reasoning in the description, and never merge
+  **not** push that to `main` — open a PR with your reasoning in the description, and never merge
   it yourself.
 
 **STEP 6 — Report.** 3–5 jobs maximum, best fits only. One sentence on why each fits, one sentence

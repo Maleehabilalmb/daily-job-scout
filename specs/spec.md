@@ -24,8 +24,8 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
   mechanism, auth and failure mode are in the `references/prompt.md` appendix.
 - **Routine prompt** was created from `references/prompt.md`. Edit that file first, then update the
   routine, so the two never drift.
-- **Write mode:** log entries go straight to `master` (the default branch — there is no `main`). Any
-  change to the fact sheet, standing decisions or this spec opens a PR instead — never self-merged.
+- **Write mode:** log entries go straight to `main`. Any change to the fact sheet, standing decisions
+  or this spec opens a PR instead — never self-merged. Both halves proven by beat 2 (push + PR #1).
 - **Local CLI is wired:** `gh` authenticated as `Maleehabilalmb` (scopes `repo`, `read:org`, `gist`); this folder is a clone with `origin` set, so `git pull` / `gh` work as-is.
 
 ## Decisions (and why)
@@ -40,20 +40,20 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Databricks over Datadog/Deloitte in lane B | it has genuinely FDE-shaped delivery roles |
 | CV read at run time from `assets/FDE-CV/` | rationales must cite real CV lines, not a remembered profile |
 | Prompt kept in `references/prompt.md` | the routine's instructions stay reviewable and versioned |
+| Dedup on title + company, not job ID | Indeed reassigns `JOBSEARCH_*` per search session; ID-only dedup fails silently (proven 2026-08-03) |
+| Lane B runs through the connector's remote US/GB search | Palantir / Lever / Databricks career pages return 403 to WebFetch from the cloud |
 
 ## Tech stack (for future research)
 | Layer | Choice | What to read up on |
 |---|---|---|
 | Scheduler | claude.ai routines (cloud cron) | `/schedule`; cron in PKT; no local machine |
 | Job data | Indeed MCP connector | `search_jobs`, `get_job_details`, `get_resume` |
-| Lane B sourcing | WebSearch + WebFetch | Greenhouse / Lever / Workday career pages |
+| Lane B sourcing | Indeed connector, remote US/GB | career pages 403 from the cloud; WebSearch only spots employers |
 | Checker | Agent tool subagent | separate adversarial pass, not self-review |
 | VCS | git + `gh` CLI over HTTPS | routine needs push rights on a private repo |
 | Local sync | Startup-folder VBS → `references/pull.bat` | on-logon Task Scheduler needs admin; Startup does not |
 
 ## Success criteria
-Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown postings ·
-every run lands on `master` so `git pull` updates the laptop · checker drops reported, never hidden.
-
-## Next session
-Nothing above is proven — no beat has ever run in the cloud. Open `references/task.md`.
+Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown
+**title + company** pairs · every run lands on `main` so `git pull` updates the laptop · checker
+drops reported, never hidden.

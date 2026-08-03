@@ -51,8 +51,9 @@ A shortlist rationale must be traceable to a line below.
     search session, not per posting — the same Taraz role was `JOBSEARCH_1` on 08-01 and
     `JOBSEARCH_14` on 08-03. Treating the ID as stable makes dedup fail silently and re-shows
     everything. Log the ID anyway (it is the handle for `get_job_details` within a run), but match
-    against the log on title + company. Found by beat 2; landed by hand, since the routine may
-    propose rule changes but never merges them.
+    against the log on title + company. Lane B postings fetched from a career page keep their URL as
+    the stable key. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
+    may propose rule changes but never merges them.
 
 ---
 
