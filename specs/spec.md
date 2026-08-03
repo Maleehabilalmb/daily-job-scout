@@ -39,6 +39,8 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Sponsorship flagged, not filtered | most postings are silent; filtering would empty the list |
 | Databricks over Datadog/Deloitte in lane B | it has genuinely FDE-shaped delivery roles |
 | CV read at run time from `assets/FDE-CV/` | rationales must cite real CV lines, not a remembered profile |
+| Dedup on title + company, not job ID | Indeed reassigns `JOBSEARCH_*` per search session; ID-only dedup fails silently (proven 2026-08-03) |
+| Lane B runs through the connector's remote-US search | Palantir / Lever / Databricks career pages return 403 to WebFetch from the cloud |
 | Prompt kept in `references/prompt.md` | the routine's instructions stay reviewable and versioned |
 
 ## Tech stack (for future research)
@@ -52,8 +54,9 @@ GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of
 | Local sync | Startup-folder VBS → `references/pull.bat` | on-logon Task Scheduler needs admin; Startup does not |
 
 ## Success criteria
-Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown job IDs ·
-every run lands on `master` so `git pull` updates the laptop · checker drops reported, never hidden.
+Fires at 09:00 PKT with the laptop off · Indeed reachable from the cloud · zero re-shown
+**title + company** pairs (not job IDs — see Decisions) · every run lands on `master` so `git pull`
+updates the laptop · checker drops reported, never hidden.
 
 ## Next session
 Nothing above is proven — no beat has ever run in the cloud. Open `references/task.md`.

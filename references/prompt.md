@@ -16,11 +16,17 @@ actually says, not a remembered profile.
 **STEP 2 — Search two lanes.**
 - **Lane A (Indeed connector):** Forward Deployed Engineer, solutions engineer, implementation and
   delivery engineer, and junior full-stack (TypeScript / React / Next.js) roles — Pakistan and remote.
-- **Lane B (WebSearch / WebFetch):** forward-deployed and delivery-engineering roles at Palantir,
-  Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers. Go to
-  their career pages, not aggregators, where the connector has no coverage.
+- **Lane B (international FDE track):** forward-deployed and delivery-engineering roles at Palantir,
+  Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers.
+  **Run this through the Indeed connector's remote **US** / **GB** search** (`forward deployed
+  engineer solutions engineer`, `implementation consultant onboarding engineer SaaS`). Their own
+  career pages — `palantir.com/careers`, `jobs.lever.co/palantir`, `databricks.com/company/careers`
+  — return **HTTP 403** to WebFetch from the cloud; verified 2026-08-03. Still try WebSearch to spot
+  new employers, but do not treat a 403 as "nothing found".
 
-Skip any job ID already in the log.
+Skip any posting whose **title + company** is already in the log. **Do not dedup on job ID** —
+Indeed reassigns `JOBSEARCH_*` every search session, so the same posting returns with a new number
+each beat and ID-only dedup fails silently.
 
 **STEP 3 — Judge.** For anything plausible, pull the **full job description** (`get_job_details`,
 or fetch the posting) before judging. Never judge on a title. For each job you keep, name the

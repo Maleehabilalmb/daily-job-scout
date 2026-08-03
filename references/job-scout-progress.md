@@ -47,6 +47,12 @@ A shortlist rationale must be traceable to a line below.
 7. **Never invent experience.** No rationale may imply a job she has not held.
 8. **Scarcity is not fit.** If nothing qualifies, return an empty list and say so plainly.
 9. **Cap output at 3–5 jobs per beat.** Best fits only.
+10. **Dedup on title + company, not on job ID.** Indeed's `JOBSEARCH_*` IDs are assigned per search
+    session, not per posting — the same posting comes back with a different number every beat
+    (Taraz's "Junior AI Engineer" was `JOBSEARCH_1` on 08-01 and `JOBSEARCH_14` on 08-03). ID-only
+    dedup therefore fails **silently**, re-showing yesterday's postings as new. Match on
+    `title + company` first; treat the ID as a per-beat reference only. Lane B postings fetched from
+    a career page keep their URL as the stable key.
 
 ---
 
