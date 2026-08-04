@@ -3,7 +3,7 @@
 **Candidate:** Maleeha Bilal — CV at `assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf`. One CV, no variants: the Forward-Deployed-Engineer and Software-Engineer positionings were merged and the US-Letter copies removed on 2026-08-04, so there is exactly one document to cite and it cannot drift.
 **Target role:** Forward Deployed Engineer / Solutions Engineer / client-facing delivery engineer — plus junior full-stack (TypeScript/React/Next.js) as the fallback lane.
 **Search lanes:** (A) Pakistan + remote via the Indeed PK connector · (B) international FDE track — Palantir, Databricks, Google Cloud (PSO/Customer Engineering), Salesforce, and comparable delivery-engineering employers.
-**Visa:** requires sponsorship. Postings silent on sponsorship are **still shortlisted**, flagged `sponsorship: unverified`.
+**Visa:** requires sponsorship. Postings silent on sponsorship are **still shortlisted**, flagged `sponsorship: unverified`. **The CV no longer says so and that changes nothing here.** The header clause "Requires visa sponsorship" was removed on 2026-08-04 — it was the third line a screener read, and work authorisation is asked on every application form anyway, so declaring it up front only invited a filter before anyone reached the projects. She still requires sponsorship; that fact lives on this line, not on the CV. Do **not** read the CV's silence as `sponsorship: not needed`. The header still names **UK / EU / Gulf** relocation targets, which is what standing decision 12 rests on.
 **Purpose:** every job ever surfaced is logged here so it is never shown twice. Read this file at the START of every beat; append at the END of every beat.
 
 ---
@@ -25,7 +25,7 @@ A shortlist rationale must be traceable to a line below.
 **Non-engineering strengths that count for FDE.** All of the following is **on the CV with dates as of 2026-08-04** and is therefore citable in a rationale:
 - **Admin & Accounts Officer (OG-II) — Askari Commercial Bank Ltd, Islamic Banking Branch, Feb 2007 – Jan 2009.** Audit and reconciliation procedures, daily deposits/advances/account-holder reporting, payroll and tax deductions, fixed-asset registers with depreciation, monthly-to-annual financial statements. Plus the General Banking Course (2007).
 - **Communication & Accounts Officer — Kay & A (Pvt.) Ltd, Oct 2006 – Feb 2007.**
-- **Economics & Business Teacher — Lahore School System, 2023 – 2026.**
+- **Economics & Business Teacher — Lahore School System, Islamabad, 2023 – 2026.** The employer is named "Lahore School System" but the branch she taught at is **in Islamabad** — the CV's location field said Lahore until it was corrected on 2026-08-04. Her base has always been Islamabad; a Lahore posting is a relocation call, not a commute.
 
 Banking-operations domain literacy is a genuine differentiator for fintech and financial-services client work — but cite **the dated role and what it involved**, never a vague "finance background". **Do not write "15 years in education and finance."** The phrase was removed from both the CV and this sheet on 2026-08-04: dated employment totals under six years, so the number contradicts the dates now printed on the CV and hands a screener an arithmetic problem. Stakeholder-facing communication, written documentation, English at IELTS 7.0 (Urdu native; Mandarin elementary; **no Arabic** — a hard gate on some Gulf FDE postings).
 
