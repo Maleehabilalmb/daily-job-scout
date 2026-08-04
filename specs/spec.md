@@ -1,7 +1,8 @@
 # Spec — Daily Job Scout (cloud routine + GitHub spine)
 
 The single source of truth for everything that runs. Each fact appears here exactly once; nothing
-else in the repo restates it. History and research live in `working/` and are never read at run time.
+else in the repo restates it. Everything the repo holds is live — how the routine was built and
+proven was moved out to `D:\CAARE\Q2\Creating-routines` on 2026-08-04 and is not needed to run it.
 
 ## Goal
 Scout Forward Deployed Engineer and client-facing delivery roles every day without the laptop being
@@ -14,10 +15,8 @@ on.
 | `job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `pull.bat` | the local sync script |
 | `assets/FDE-CV/` | CV variants the routine reads at run time |
-| `working/` | how this was built and proven — **the routine never reads these** |
 
-**The routine reads exactly two files:** this spec and `job-scout-progress.md`. `working/` can be
-moved out of the repo without affecting a run.
+**The routine reads exactly two files:** this spec and `job-scout-progress.md`.
 
 ## Architecture
 GitHub **private** repo `Maleehabilalmb/daily-job-scout` is the single source of truth.
