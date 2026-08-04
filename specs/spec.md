@@ -14,7 +14,7 @@ on.
 | `specs/spec.md` | this file — what the system is, the beat it runs, how it is built, and why |
 | `job-scout-progress.md` | the spine: fact sheet, standing decisions, every job seen |
 | `pull.bat` | the local sync script |
-| `assets/FDE-CV/` | CV variants the routine reads at run time |
+| `assets/FDE-CV/` | the one CV the routine reads at run time — `.docx` is the source, `.pdf` is what the beat opens |
 
 **The routine reads exactly two files:** this spec and `job-scout-progress.md`.
 

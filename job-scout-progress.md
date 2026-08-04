@@ -1,6 +1,6 @@
 # Daily Job Scout — Progress Log (spine)
 
-**Candidate:** Maleeha Bilal — CV at `assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` (A4 default; US-Letter and Software-Engineer variants in the same folder)
+**Candidate:** Maleeha Bilal — CV at `assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf`. One CV, no variants: the Forward-Deployed-Engineer and Software-Engineer positionings were merged and the US-Letter copies removed on 2026-08-04, so there is exactly one document to cite and it cannot drift.
 **Target role:** Forward Deployed Engineer / Solutions Engineer / client-facing delivery engineer — plus junior full-stack (TypeScript/React/Next.js) as the fallback lane.
 **Search lanes:** (A) Pakistan + remote via the Indeed PK connector · (B) international FDE track — Palantir, Databricks, Google Cloud (PSO/Customer Engineering), Salesforce, and comparable delivery-engineering employers.
 **Visa:** requires sponsorship. Postings silent on sponsorship are **still shortlisted**, flagged `sponsorship: unverified`.
@@ -22,9 +22,14 @@ A shortlist rationale must be traceable to a line below.
 
 **Stack:** TypeScript, JavaScript, Python · React, Next.js (App Router), React Native, Expo, Tailwind · Node.js, REST, Firebase, JSON Schema · Playwright · Docker, Vercel, Oracle Cloud ARM64, Linux, Tailscale, CI/CD, Git & GitHub · MCP, agent orchestration, n8n · spec-driven development, runbooks, requirements elicitation.
 
-**Non-engineering strengths that count for FDE:** 15 years in education and finance — teaching Economics (3 yrs, Lahore School System), banking accounts/audit/payroll, financial statement preparation. Stakeholder-facing communication, written documentation, English at IELTS 7.0. Domain literacy in finance is a genuine differentiator for fintech/banking client work.
+**Non-engineering strengths that count for FDE.** All of the following is **on the CV with dates as of 2026-08-04** and is therefore citable in a rationale:
+- **Admin & Accounts Officer (OG-II) — Askari Commercial Bank Ltd, Islamic Banking Branch, Feb 2007 – Jan 2009.** Audit and reconciliation procedures, daily deposits/advances/account-holder reporting, payroll and tax deductions, fixed-asset registers with depreciation, monthly-to-annual financial statements. Plus the General Banking Course (2007).
+- **Communication & Accounts Officer — Kay & A (Pvt.) Ltd, Oct 2006 – Feb 2007.**
+- **Economics & Business Teacher — Lahore School System, 2023 – 2026.**
 
-**Education:** MSc Economics & Finance, Distinction, CGPA 3.92/4.00 (IIUI) · B.Ed (AIOU) · Agentic AI & Robotics Engineering, Panaversity/PIAIC Batch 83 — in progress, expected May 2027. **No CS/SE degree.**
+Banking-operations domain literacy is a genuine differentiator for fintech and financial-services client work — but cite **the dated role and what it involved**, never a vague "finance background". **Do not write "15 years in education and finance."** The phrase was removed from both the CV and this sheet on 2026-08-04: dated employment totals under six years, so the number contradicts the dates now printed on the CV and hands a screener an arithmetic problem. Stakeholder-facing communication, written documentation, English at IELTS 7.0 (Urdu native; Mandarin elementary; **no Arabic** — a hard gate on some Gulf FDE postings).
+
+**Education:** MSc Economics & Finance, Distinction, CGPA 3.92/4.00 (IIUI) · B.Com (Punjab University, 1999–2001) · B.Ed (AIOU) · Agentic AI & Robotics Engineering, Panaversity/PIAIC Batch 83 — in progress, expected May 2027. **No CS/SE degree.**
 
 **Honest gaps:**
 - No paid employment as a software engineer — self-directed delivery only. Postings demanding "3+ years professional software development" remain out of reach.
@@ -32,6 +37,7 @@ A shortlist rationale must be traceable to a line below.
 - Python is real but lighter than TypeScript. **It is not unshipped:** the Browser Automation & QA Harness is listed on the CV as `Python · Playwright · Model Context Protocol`, so a Python artifact exists and a posting asking for scripting-level Python is not automatically a drop. What is missing is a Python *backend* — no FastAPI/Flask/Django service on record. No Java, Go, C++, Rust. No Kubernetes, Terraform, Spark, or data-warehouse work.
 - **Node.js is a skills-line keyword with no shipped standalone Node backend.** Every shipped project on this sheet is frontend, mobile or infrastructure — Next.js route handlers and Firebase SDK integration are the closest thing on record. Treat a posting demanding Node/Express backend proficiency the way the ContentStudio drop treated Python: keyword present, artifact absent.
 - No CS degree — a hard filter at some large employers regardless of portfolio.
+- **A 2009–2023 employment gap is now visible on the CV** (only the B.Ed, 2015, sits inside it). This is the accepted cost of adding the dated banking roles on 2026-08-04: the domain credibility was judged worth the exposed timeline. It is not a disqualifier and it is not something to hide or explain away in a rationale — just expect it to surface in screening.
 
 **Pending evidence (update this line when it lands):** a flagship web app built specifically to demonstrate FDE capability. Not shipped yet. Once live, log the URL and repo here and re-open every posting marked `reopen-when-flagship-ships`.
 
