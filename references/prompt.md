@@ -62,7 +62,7 @@ list — do not pad it. Scarcity is not fit.
 The cloud routine has no route to `D:\`. It only ever writes the GitHub repo; the push is where its
 job ends. Something running on the laptop has to fetch — there is no push-to-laptop mechanism.
 
-That something is `references/pull.bat` (in this repo), which runs `git -C D:\SIR-AMMAR\Indeed pull --ff-only`.
+That something is `references/pull.bat` (in this repo), which runs `git -C D:\CAARE\Q2\SIR-AMMAR\Indeed pull --ff-only`.
 It is launched at logon by `job-scout-pull.vbs` in the Windows Startup folder
 (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`), which runs it hidden — no console flash.
 A Task Scheduler on-logon task was tried first and refused: registering one requires admin rights.

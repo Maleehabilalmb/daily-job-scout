@@ -4,7 +4,7 @@ REM Run at Windows logon by the "Job Scout Pull" scheduled task.
 REM The cloud routine pushes to GitHub; this is what brings it down to D:\.
 REM Output is appended to pull-log.txt so a failed pull is visible, not silent.
 
-set REPO=D:\SIR-AMMAR\Indeed
+set REPO=D:\CAARE\Q2\SIR-AMMAR\Indeed
 set LOG=%REPO%\pull-log.txt
 
 echo. >> "%LOG%"
