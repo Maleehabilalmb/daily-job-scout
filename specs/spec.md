@@ -62,15 +62,29 @@ actually says, not a remembered profile.
 - **Lane B (international FDE track):** forward-deployed and delivery-engineering roles at Palantir,
   Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers.
   Databricks is in and Datadog / Deloitte are out because it has genuinely FDE-shaped delivery roles.
-  Run this **through the Indeed connector's remote US / GB search** (`forward deployed engineer
-  solutions engineer`, `implementation consultant onboarding engineer SaaS`). Their own career pages —
-  `palantir.com/careers`, `jobs.lever.co/palantir`, `databricks.com/company/careers` — return **HTTP
-  403** to WebFetch from the cloud; verified 2026-08-03. Still run WebSearch to spot new employers,
-  but never treat a 403 as "nothing found".
+  Run this **through the Indeed connector, searched by city** (`forward deployed engineer solutions
+  engineer`, `implementation consultant onboarding engineer SaaS`): London and Manchester for the UK,
+  Dubai / Abu Dhabi / Riyadh for the Gulf, plus remote US. **Do not search remote GB** — it returns 0
+  across phrasings while the same intent against London returns the live UK FDE market, and the Gulf
+  went unsearched for four beats although the CV names it a relocation target (standing decision 12).
+  Their own career pages — `palantir.com/careers`, `jobs.lever.co/palantir`,
+  `databricks.com/company/careers` — return **HTTP 403** to WebFetch from the cloud; verified
+  2026-08-03. Still run WebSearch to spot new employers, but never treat a 403 as "nothing found".
 
 Skip anything already in the log — match on **title + company**, not job ID. Indeed's `JOBSEARCH_*`
 IDs are assigned per search session, so the same posting gets a new ID every run (standing decision
 10). Log the ID anyway; it is the handle `get_job_details` needs within a run.
+
+**One exception — `re-evaluate` rows are debts, not decisions, and are never deduped.** A row with
+that verdict was seen but never judged, so title + company matching would bury it permanently. That
+is not hypothetical: six rows carried it into beat 5, five of them from 2026-08-01, deduped away
+unjudged for three beats.
+
+Before you search, grep the job log for `Re-evaluate` (the log capitalises it), pull the JD for every
+row you find, and judge it — that is the first work of the beat, ahead of any new search. Update
+each existing row in place with the real verdict and the date you judged it; do not append a second
+row for the same posting. If a JD still cannot be pulled, leave the row `Re-evaluate` and say so in
+the beat-history entry — never downgrade it to `Skipped` to clear the queue.
 
 **STEP 3 — Judge.** For anything plausible, pull the **full job description** (`get_job_details`,
 or fetch the posting) before judging. Never judge on a title. For each job you keep, name the
@@ -90,11 +104,18 @@ the same pass rationalises its own shortlist. Carry its drops and reasons into y
   from it will be re-shown tomorrow.
 - Add a beat-history entry: searches run, counts, draft shortlist, what the checker dropped and why,
   what was delivered.
-- Commit and push those log changes straight to `main` — the repo's default branch, and the one you
-  cloned. Do not create any other long-lived branch.
+- Commit those log changes and push them with **`git push origin HEAD:main`** — name `main`
+  explicitly, whatever the local branch happens to be called. **Never use a bare `git push`.** On
+  beat 4 the checkout's local branch was `master`; a bare push created a stray `master` on the
+  remote, `main` never moved, and the laptop's `git pull --ff-only` saw an unchanged repo for a full
+  day. Do not create any other long-lived branch.
 - If you believe the candidate fact sheet, the standing decisions, or `specs/spec.md` should change, do
   **not** push that to `main` — open a PR with your reasoning in the description, and never merge
-  it yourself.
+  it yourself. **Cut the PR branch from `origin/main`, never from whatever is checked out:**
+  `git fetch origin && git checkout -b <branch> origin/main`, then `git push origin HEAD:<branch>`.
+  A branch cut from a local branch that has drifted carries commits `main` never received, so the
+  PR diff shows changes that are not actually missing from `main` and the reviewer cannot tell the
+  proposal from the drift.
 
 **STEP 6 — Report.** 3–5 jobs maximum, best fits only. One sentence on why each fits, one sentence
 on what the checker verified or rejected. If nothing survives, say so plainly and deliver an empty

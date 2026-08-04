@@ -61,12 +61,27 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     against the log on title + company. Lane B postings fetched from a career page keep their URL as
     the stable key. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
     may propose rule changes but never merges them.
+11. **A posting that states no requirements has not stated a low bar — it has stated nothing.**
+    Silence is not evidence, and a shortlist may not rest on the *absence* of a disqualifier. Name the
+    fact-sheet line the posting affirmatively asks for; if the only argument available is "there is no
+    gap to substitute for", that is an argument from silence and the posting is a drop. Where a JD is
+    all hedges ("maybe you founded a company"), rule 4 already forbids it. Corollary: pay band and
+    seniority language are requirements even when no years figure is given. Found by beat 4's checker
+    on a £120–160k London FDE posting that named no degree, no years and no stack.
+12. **Search UK and the Gulf by city, not by "remote".** `forward deployed engineer` against remote/GB
+    returns 0 across phrasings; the same intent against `London` returns the live UK FDE market. The
+    CV names **UK / EU / Gulf** as relocation targets, so Dubai/Abu Dhabi and Riyadh belong in the
+    standing rotation — one Dubai query on beat 4 returned Salesforce, BCG X (including an
+    internship-grade FDE post) and two ElevenLabs deployment roles, the densest FDE-titled yield of
+    any single query in four beats.
 
 ---
 
 ## Verdict vocabulary
 
-`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships`
+`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate`
+
+`re-evaluate` means **seen but never judged** — the JD could not be pulled, so standing decision 3 was not satisfied. It is not a soft skip: a `re-evaluate` row is a debt the next beat must clear before anything else, and it is the one verdict that title + company dedup must not skip. Used on beat 4 when the connector rate-limited mid-run (JOBSEARCH_224).
 
 ---
 
