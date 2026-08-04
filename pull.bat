@@ -1,8 +1,5 @@
 @echo off
-REM Daily Job Scout - local sync.
-REM Run at Windows logon by the "Job Scout Pull" scheduled task.
-REM The cloud routine pushes to GitHub; this is what brings it down to D:\.
-REM Output is appended to pull-log.txt so a failed pull is visible, not silent.
+REM Daily Job Scout - local sync. See "Local sync" in specs\spec.md.
 
 set REPO=D:\CAARE\Q2\SIR-AMMAR\Indeed
 set LOG=%REPO%\pull-log.txt
