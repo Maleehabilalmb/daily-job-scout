@@ -22,7 +22,10 @@ A shortlist rationale must be traceable to a line below.
 
 **Stack:** TypeScript, JavaScript, Python · React, Next.js (App Router), React Native, Expo, Tailwind · Node.js, REST, Firebase, JSON Schema · Playwright · Docker, Vercel, Oracle Cloud ARM64, Linux, Tailscale, CI/CD, Git & GitHub · MCP, agent orchestration, n8n · spec-driven development, runbooks, requirements elicitation.
 
-**Non-engineering strengths that count for FDE:** 15 years in education and finance — teaching Economics (3 yrs, Lahore School System), banking accounts/audit/payroll, financial statement preparation. Stakeholder-facing communication, written documentation, English at IELTS 7.0. Domain literacy in finance is a genuine differentiator for fintech/banking client work.
+**Non-engineering strengths that count for FDE:** 15 years in education and finance. Stakeholder-facing communication, written documentation, English at IELTS 7.0 (Urdu native; Mandarin elementary; **no Arabic** — a hard gate on some Gulf FDE postings).
+- **On the CV, and therefore usable in a rationale:** Economics & Business Teacher, Lahore School System, 2023–2026 (3 yrs) — designed curriculum, taught quantitative problem solving. MSc Economics & Finance, Distinction.
+- **NOT on the CV — do not cite in a rationale until it is:** banking accounts/audit/payroll and financial statement preparation. Both CV variants in `assets/FDE-CV/` carry exactly three experience entries — MB Dev Studio, Progree, Lahore School System — with banking present only inside the summary phrase "15 years in education and finance". A screener reading the CV sees no banking role at all. Finance *domain literacy* via the MSc is real and citable; a banking *work history* is not visible and citing it breaches rule 7.
+- **Either put the banking roles on the CV or stop building shortlists on them.** Found on beat 4, when a draft rationale leaned on "her banking background" for a wealth-management client and the checker verified it against both CV files.
 
 **Education:** MSc Economics & Finance, Distinction, CGPA 3.92/4.00 (IIUI) · B.Ed (AIOU) · Agentic AI & Robotics Engineering, Panaversity/PIAIC Batch 83 — in progress, expected May 2027. **No CS/SE degree.**
 
@@ -55,12 +58,27 @@ A shortlist rationale must be traceable to a line below.
     against the log on title + company. Lane B postings fetched from a career page keep their URL as
     the stable key. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
     may propose rule changes but never merges them.
+11. **A posting that states no requirements has not stated a low bar — it has stated nothing.**
+    Silence is not evidence, and a shortlist may not rest on the *absence* of a disqualifier. Name the
+    fact-sheet line the posting affirmatively asks for; if the only argument available is "there is no
+    gap to substitute for", that is an argument from silence and the posting is a drop. Where a JD is
+    all hedges ("maybe you founded a company"), rule 4 already forbids it. Corollary: pay band and
+    seniority language are requirements even when no years figure is given. Found by beat 4's checker
+    on a £120–160k London FDE posting that named no degree, no years and no stack.
+12. **Search UK and the Gulf by city, not by "remote".** `forward deployed engineer` against remote/GB
+    returns 0 across phrasings; the same intent against `London` returns the live UK FDE market. The
+    CV names **UK / EU / Gulf** as relocation targets, so Dubai/Abu Dhabi and Riyadh belong in the
+    standing rotation — one Dubai query on beat 4 returned Salesforce, BCG X (including an
+    internship-grade FDE post) and two ElevenLabs deployment roles, the densest FDE-titled yield of
+    any single query in four beats.
 
 ---
 
 ## Verdict vocabulary
 
-`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships`
+`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate`
+
+`re-evaluate` means **seen but never judged** — the JD could not be pulled, so standing decision 3 was not satisfied. It is not a soft skip: a `re-evaluate` row is a debt the next beat must clear before anything else. Used on beat 4 when the connector rate-limited mid-run (JOBSEARCH_224).
 
 ---
 
