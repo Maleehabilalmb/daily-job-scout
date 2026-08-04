@@ -1,8 +1,8 @@
 # Outcomes — what has been proven, and what it showed
 
 One entry per goal that is finished. Each states the goal and what actually happened, in a few
-lines. Nothing here is open work; open work lives in `references/task.md`, and per-beat detail lives
-in `references/job-scout-progress.md`.
+lines. Nothing here is open work; open work lives in `working/task.md`, and per-beat detail lives
+in `job-scout-progress.md`.
 
 ---
 

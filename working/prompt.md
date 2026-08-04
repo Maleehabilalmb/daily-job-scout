@@ -1,7 +1,9 @@
-# Routine prompt — Daily Job Scout
+# Routine prompt — Daily Job Scout (HISTORY — superseded)
 
-This is the exact prompt the cloud routine runs each beat. The routine was created from this
-file; edit here first, then update the routine so the two never drift apart.
+**Not live. Do not edit to change the routine.** Kept as the record of the instructions the routine
+was originally created from, so the check of its success has a source. The live beat is now
+**The beat** in `specs/spec.md`, and the sync appendix below is now **Local sync** there — edit those.
+Paths in this file are as they were when it ran; several have since moved.
 
 ---
 

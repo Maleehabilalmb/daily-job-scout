@@ -1,8 +1,8 @@
 # Task list
 
 Kept as history. Everything else now runs on the routine itself — it fires at 09:00 PKT, writes its
-own outcome into `references/job-scout-progress.md`, and needs no task entry. What each finished goal
-proved is in `references/outcome.md`; what the system is and where each file lives is in
+own outcome into `job-scout-progress.md`, and needs no task entry. What each finished goal
+proved is in `working/outcome.md`; what the system is and where each file lives is in
 `specs/spec.md`.
 
 ---
