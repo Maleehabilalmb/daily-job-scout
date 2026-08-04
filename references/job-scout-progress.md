@@ -29,7 +29,8 @@ A shortlist rationale must be traceable to a line below.
 **Honest gaps:**
 - No paid employment as a software engineer — self-directed delivery only. Postings demanding "3+ years professional software development" remain out of reach.
 - No production system at scale, no on-call, no team-of-engineers experience.
-- Python is real but lighter than TypeScript. No Java, Go, C++, Rust. No Kubernetes, Terraform, Spark, or data-warehouse work.
+- Python is real but lighter than TypeScript. **It is not unshipped:** the Browser Automation & QA Harness is listed on the CV as `Python · Playwright · Model Context Protocol`, so a Python artifact exists and a posting asking for scripting-level Python is not automatically a drop. What is missing is a Python *backend* — no FastAPI/Flask/Django service on record. No Java, Go, C++, Rust. No Kubernetes, Terraform, Spark, or data-warehouse work.
+- **Node.js is a skills-line keyword with no shipped standalone Node backend.** Every shipped project on this sheet is frontend, mobile or infrastructure — Next.js route handlers and Firebase SDK integration are the closest thing on record. Treat a posting demanding Node/Express backend proficiency the way the ContentStudio drop treated Python: keyword present, artifact absent.
 - No CS degree — a hard filter at some large employers regardless of portfolio.
 
 **Pending evidence (update this line when it lands):** a flagship web app built specifically to demonstrate FDE capability. Not shipped yet. Once live, log the URL and repo here and re-open every posting marked `reopen-when-flagship-ships`.
