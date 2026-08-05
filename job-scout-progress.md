@@ -74,14 +74,27 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     standing rotation — one Dubai query on beat 4 returned Salesforce, BCG X (including an
     internship-grade FDE post) and two ElevenLabs deployment roles, the densest FDE-titled yield of
     any single query in four beats.
+13. **A qualifier governs only the clause it attaches to.** "Preferred", "ideally", "such as" and
+    "or similar" narrow the phrase they sit inside; they do not soften the whole bullet. Palantir's
+    require list reads "**Strong engineering background**, preferred in fields such as Computer
+    Science, Mathematics, Software Engineering, Physics, and Data Science" — the requirement is a
+    strong engineering background, and what is *preferred* is which field it sits in. Beat 5's draft
+    read "preferred" as governing the bullet, which turned a requirement she fails into an optional
+    nice-to-have, and the checker caught it. Corollary, from the same beat: **the verb decides.**
+    Two near-identical Abu Dhabi "deployed engineer" postings split on two word pairs — Gecko's
+    "*or relevant experience*" and "*familiarity with* data structures" (kept) against Brain Co.'s
+    "*or a related field*" and "*strong foundation in* ... data structures and algorithms" (dropped).
+    Read these postings clause by clause; skimming for stack overlap gets both directions wrong.
 
 ---
 
 ## Verdict vocabulary
 
-`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate`
+`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate` · `expired`
 
 `re-evaluate` means **seen but never judged** — the JD could not be pulled, so standing decision 3 was not satisfied. It is not a soft skip: a `re-evaluate` row is a debt the next beat must clear before anything else, and it is the one verdict that title + company dedup must not skip. Used on beat 4 when the connector rate-limited mid-run (JOBSEARCH_224).
+
+`expired` means **the posting left the index before it could be judged** — searched for across several phrasings over two or more beats and not returned, while the employer is demonstrably still listing. It closes a `re-evaluate` debt without pretending a verdict was reached: it is a fact about the posting, not a judgement on the candidate, and it is the only permitted exit from `re-evaluate` other than a real verdict. A row may only be marked `expired` after **two** beats of failed retrieval, and the failed queries must be named in the row. Proposed on beat 5 for JOBSEARCH_224 (Fun Prime Technology), which has now missed two beats — held at `re-evaluate` pending this rule, since inventing the verdict to clear the queue is exactly what the debt rule forbids.
 
 ---
 
