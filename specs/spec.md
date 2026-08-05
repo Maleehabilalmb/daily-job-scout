@@ -75,16 +75,20 @@ Skip anything already in the log — match on **title + company**, not job ID. I
 IDs are assigned per search session, so the same posting gets a new ID every run (standing decision
 10). Log the ID anyway; it is the handle `get_job_details` needs within a run.
 
-**One exception — `re-evaluate` rows are debts, not decisions, and are never deduped.** A row with
-that verdict was seen but never judged, so title + company matching would bury it permanently. That
-is not hypothetical: six rows carried it into beat 5, five of them from 2026-08-01, deduped away
-unjudged for three beats.
+**Two exceptions — `re-evaluate` and `expired` rows are never deduped.** Both mark a posting that was
+seen but never judged, so title + company matching would bury it permanently. That is not
+hypothetical: six `re-evaluate` rows carried into beat 5, five of them from 2026-08-01, deduped away
+unjudged for three beats. `Expired` says the posting left the index before anyone read it — so if
+that title and company come back to the results, it is a new posting and you judge it.
 
 Before you search, grep the job log for `Re-evaluate` (the log capitalises it), pull the JD for every
 row you find, and judge it — that is the first work of the beat, ahead of any new search. Update
 each existing row in place with the real verdict and the date you judged it; do not append a second
 row for the same posting. If a JD still cannot be pulled, leave the row `Re-evaluate` and say so in
-the beat-history entry — never downgrade it to `Skipped` to clear the queue.
+the beat-history entry — never downgrade it to `Skipped` to clear the queue. There is exactly one
+other exit: mark the row `Expired` once the posting has failed retrieval across two or more beats and
+several phrasings while the employer is demonstrably still listing, and name the failed queries in
+the row. `Expired` is a fact about the posting, never a judgement on the candidate.
 
 **STEP 3 — Judge.** For anything plausible, pull the **full job description** (`get_job_details`,
 or fetch the posting) before judging. Never judge on a title. For each job you keep, name the

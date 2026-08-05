@@ -96,6 +96,8 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
 
 `expired` means **the posting left the index before it could be judged** — searched for across several phrasings over two or more beats and not returned, while the employer is demonstrably still listing. It closes a `re-evaluate` debt without pretending a verdict was reached: it is a fact about the posting, not a judgement on the candidate, and it is the only permitted exit from `re-evaluate` other than a real verdict. A row may only be marked `expired` after **two** beats of failed retrieval, and the failed queries must be named in the row. Proposed on beat 5 for JOBSEARCH_224 (Fun Prime Technology), which has now missed two beats — held at `re-evaluate` pending this rule, since inventing the verdict to clear the queue is exactly what the debt rule forbids.
 
+**An `expired` row does not suppress a re-listing.** It records that a posting left the index — not that anyone read it — so it is the second verdict title + company dedup must not skip. If that title and company come back to the results, it is a new posting: pull the JD and judge it. Deduping against an expired row would bury a posting nobody has ever judged, which is the exact failure `re-evaluate` exists to prevent, arriving through the exit instead of the entrance.
+
 ---
 
 ## Job log
