@@ -85,6 +85,20 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     "*or relevant experience*" and "*familiarity with* data structures" (kept) against Brain Co.'s
     "*or a related field*" and "*strong foundation in* ... data structures and algorithms" (dropped).
     Read these postings clause by clause; skimming for stack overlap gets both directions wrong.
+14. **Quote the required-qualifications block verbatim into the rationale before writing the case
+    for a keep.** Not "read the JD" — rule 3 already says that, and rule 3 was satisfied on every
+    posting this failure hit. The draft pulled the full JD, then built its case from the paragraphs
+    that flatter the fact sheet and never looked back at the requirements list. Beat 7 lost all three
+    of its borderlines to one root cause: RS UK's required block reads "Proficiency in Python,
+    **SQL** and API integration" — unqualified, conjunctive, and SQL is not on the fact sheet at all,
+    yet the draft argued the FDE title and one n8n mapping and never quoted the clause (the checker's
+    phrase for this was *role-shape vibes*). Rune's block carried four non-functional testing duties
+    and release-gatekeeping authority over an engineering team, all uncovered; the draft matched the
+    one Playwright bullet and stopped. Eliza's block was skipped in favour of an inference drawn from
+    a word the posting did **not** contain. Rules 4, 8 and 11 each already forbade what happened;
+    none of them fired, because the disqualifying sentence was never read aloud. The corrective is
+    mechanical, so make it mechanical: paste the required list into the rationale first, then argue.
+    A keep whose rationale does not quote the requirements block has not been checked against it.
 
 ---
 
