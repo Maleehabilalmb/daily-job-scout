@@ -56,9 +56,20 @@ the standing decisions (the rules you judge by), and the log of every job ever s
 `assets/FDE-CV/Maleeha-Bilal-CV-Forward-Deployed-Engineer-A4.pdf` — every rationale must cite what the CV
 actually says, not a remembered profile.
 
-**STEP 2 — Search two lanes.**
+**STEP 2 — Search the lanes below.**
 - **Lane A (Indeed connector):** Forward Deployed Engineer, solutions engineer, implementation and
   delivery engineer, and junior full-stack (TypeScript / React / Next.js) roles — Pakistan and remote.
+- **Lane C (test-automation seam) — run it in remote and UK / EU form, not only against Pakistan**
+  (`playwright test automation engineer`, `SDET Playwright remote`). The CV carries a shipped
+  Playwright artifact — a manual regression checklist converted into repeatable scripts across
+  mobile, tablet and desktop breakpoints, exposed to agents over MCP — and beat 7's checker, while
+  dropping the posting, volunteered that a Playwright regression seat was **the closest true stack
+  fit the log has recorded**: TypeScript/React a plus, Kubernetes only desired, the 2+ years the
+  only gap. That posting died on location (on-site Seattle), not on capability. Every QA row in the
+  log so far arrived as by-catch of the junior-frontend queries, which is why the seam has only ever
+  been sampled where it is weakest. **This is not a fourth target role** — it is the fallback lane's
+  neighbour, and it is judged by the same fact sheet: manual-QA and Selenium/Python-primary posts
+  stay drops (the Raccoon and Nook precedents).
 - **Lane B (international FDE track):** forward-deployed and delivery-engineering roles at Palantir,
   Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers.
   Databricks is in and Datadog / Deloitte are out because it has genuinely FDE-shaped delivery roles.
