@@ -67,6 +67,16 @@ actually says, not a remembered profile.
   Dubai / Abu Dhabi / Riyadh for the Gulf, plus remote US. **Do not search remote GB** — it returns 0
   across phrasings while the same intent against London returns the live UK FDE market, and the Gulf
   went unsearched for four beats although the CV names it a relocation target (standing decision 12).
+  **Search Germany too, and search it by employer or product rather than by title** — `forward
+  deployed engineer solutions engineer` against Berlin returns 0 while a bare `n8n` query against
+  Berlin returns 10, so the FDE vocabulary has not travelled to the German market and a title search
+  will report an empty country that is not empty. Germany earns a standing slot for a second reason,
+  which is stronger than coverage: n8n's postings state *"We can sponsor visas to Germany; for any
+  other country, you need to have existing right to work"* — the first affirmative sponsorship answer
+  in six beats, and it makes Germany-based reqs at European product companies structurally
+  higher-yield than London ones for a candidate who requires sponsorship (standing decision 14).
+  Doha is covered and thin — an occasional check, not every beat. Amsterdam is unproven: it returned
+  0 to the title phrasing, which after Berlin is not evidence of absence.
   Their own career pages — `palantir.com/careers`, `jobs.lever.co/palantir`,
   `databricks.com/company/careers` — return **HTTP 403** to WebFetch from the cloud; verified
   2026-08-03. Still run WebSearch to spot new employers, but never treat a 403 as "nothing found".

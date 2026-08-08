@@ -85,6 +85,32 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     "*or relevant experience*" and "*familiarity with* data structures" (kept) against Brain Co.'s
     "*or a related field*" and "*strong foundation in* ... data structures and algorithms" (dropped).
     Read these postings clause by clause; skimming for stack overlap gets both directions wrong.
+14. **Where a market is searched matters as much as how, and a title search can report an empty
+    country that is not empty.** Standing decision 12 established that the connector needs a city
+    rather than "remote". Beat 6 found the next level down: `forward deployed engineer solutions
+    engineer` against **Berlin** returns 0, while a bare `n8n` query against Berlin returns 10 —
+    the FDE vocabulary has not travelled to the German market, so Germany must be searched **by
+    employer or product name**, not by title. Germany then earns a standing slot on evidence
+    stronger than coverage. Every Lane B keep and near-miss in six beats has been
+    `sponsorship: unverified`; n8n's postings are the first to state the answer — *"We can sponsor
+    visas to Germany; for any other country, you need to have existing right to work"* — which
+    simultaneously makes its London req an affirmative `sponsorship: no` and makes Germany-based
+    reqs at European product companies the highest-yield geography in the rotation for a candidate
+    who requires sponsorship. **Corollary, and the reason this is a rule rather than a note:** a
+    single sentence in a benefits block can decide a whole geography, so read the sponsorship line
+    on every Lane B posting even when the requirements have already dropped it — the drop is about
+    the posting, the sponsorship line is about the employer, and the second outlives the first.
+15. **A rare keyword is not a shortlist engine.** Beat 6's draft put up two borderlines and both
+    rested on n8n, which appears on the fact sheet and had shown up on roughly one posting in the
+    previous five beats combined — then on five of the eight judged in one run. In every case the
+    qualifier around it parked it in the optional tier ("would be highly beneficial", "is a massive
+    plus", under "Nice-to-haves") or bound it to a named gap ("proficient in Python, **and** n8n,
+    and API architecture"). The checker's finding: *"assembling a shortlist because the rare keyword
+    finally showed up is the Palantir tell — 'the lowest years bar ever seen at a Lane B target
+    employer' — wearing a different costume."* Rule 8 covers scarcity of **matches**, not only
+    scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
+    section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
+    the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
 
 ---
 
