@@ -63,7 +63,7 @@ actually says, not a remembered profile.
   Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers.
   Databricks is in and Datadog / Deloitte are out because it has genuinely FDE-shaped delivery roles.
   Run this **through the Indeed connector, searched by city** (`forward deployed engineer solutions
-  engineer`, `implementation consultant onboarding engineer SaaS`): London and Manchester for the UK,
+  engineer`, `implementation consultant onboarding engineer SaaS`): London for the UK,
   Dubai / Abu Dhabi / Riyadh for the Gulf, plus remote US. **Do not search remote GB** — it returns 0
   across phrasings while the same intent against London returns the live UK FDE market, and the Gulf
   went unsearched for four beats although the CV names it a relocation target (standing decision 12).
@@ -75,8 +75,19 @@ actually says, not a remembered profile.
   other country, you need to have existing right to work"* — the first affirmative sponsorship answer
   in six beats, and it makes Germany-based reqs at European product companies structurally
   higher-yield than London ones for a candidate who requires sponsorship (standing decision 14).
-  Doha is covered and thin — an occasional check, not every beat. Amsterdam is unproven: it returned
-  0 to the title phrasing, which after Berlin is not evidence of absence.
+  **Doha is in the standing rotation.** It was carried as "covered and thin — an occasional check"
+  for six beats on no evidence; when beat 11 finally ran it, `solutions engineer implementation
+  engineer` / Doha returned **10 results of which 10 were new** — the only clean sweep in the log,
+  against 59% re-surfaces across the run as a whole. None cleared, but a city that returns nothing
+  already judged is the opposite of thin. Amsterdam is unproven: it returned 0 to the title
+  phrasing, which after Berlin is not evidence of absence.
+  **Manchester is rotated out.** `solutions engineer implementation engineer` / Manchester has
+  returned zero judgeable postings for three consecutive beats; beat 11's ten results were seven
+  new SThree titles from one 01 July batch, each opening "Please note the content of this advert
+  does not represent a live vacancy". The log now carries seventeen SThree rows. Beat 9 flagged the
+  slot as effectively zero-yield and two beats later it was still spending a query and ten log rows
+  per beat on a recruiter's mailing list. Drop the slot, or re-phrase it away from
+  `solutions engineer implementation engineer`, which is the phrasing SThree's adverts match.
   Their own career pages — `palantir.com/careers`, `jobs.lever.co/palantir`,
   `databricks.com/company/careers` — return **HTTP 403** to WebFetch from the cloud; verified
   2026-08-03. Still run WebSearch to spot new employers, but never treat a 403 as "nothing found".

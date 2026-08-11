@@ -111,6 +111,24 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+16. **Running a query is not covering the seam it was meant to open.** Beat 10 closed with an
+    explicit action: re-run `solutions engineer technical support engineer` against Karachi,
+    Islamabad and Lahore. Beat 11 ran it against all three — and **Contour Software's
+    "Implementation Specialist" (Karachi) was in none of the three result sets.** The checker
+    re-ran the same axis and it came back. The mechanism is structural, not sloppiness: Indeed
+    returns ten results per query and assigns `JOBSEARCH_*` IDs per session, so two runs of the
+    same query text against the same city return **different ten-item windows** onto a larger set.
+    A single run therefore samples a market rather than covering it, and the posting it misses can
+    be the best one in it — this one had **no degree requirement, no years bar, and SQL demoted to
+    nice-to-have**, the exact three gates that have killed nearly every Lane A candidate for ten
+    beats, all three absent at once. It still dropped on three unqualified required bullets, so
+    nothing was lost from the shortlist; what was nearly lost was the judging. **The rule:** when a
+    prior beat mandates a query axis, run it a second time with a varied phrasing before recording
+    it as covered, and never write "ran the query" in a beat entry as if it meant "covered the
+    seam" — they are different claims and the beat entry must not blur them. Corollary: this is the
+    entrance-side twin of the `re-evaluate` debt rule. `Re-evaluate` exists because a posting seen
+    but unjudged must not be buried; decision 16 exists because a posting **never surfaced** cannot
+    even become a debt, and the only defence is querying the same seam more than once.
 
 ---
 
