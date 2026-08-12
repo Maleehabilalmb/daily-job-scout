@@ -112,6 +112,23 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
 
+16. **For recruitment agencies, title + company is not a posting identity.** Standing decision 10
+    dedups on title + company because Indeed's job IDs are per-session. That key holds for direct
+    employers and **fails for agencies**, which run many distinct client reqs under one generic
+    title. Beat 12 found the failure: Linux Recruit's "Forward Deployed Engineer" (`_1106`, posted
+    2026-08-11) is demonstrably a *different req* from beat 4's `_193` — different salary band
+    (£130–160k against £120–160k), a different named consultant, and entirely different body copy,
+    where `_193` named **no** disqualifying technology and `_1106` names backend depth, distributed
+    systems and Kubernetes. Rule 10 as written would have buried it unjudged, and it drops for
+    completely different reasons than `_193` did. The log's **seventeen** SThree rows are the same
+    phenomenon from the other side: one agency, many titles, no vacancy behind them.
+    **The rule:** when the company is a recruitment agency or staffing firm, dedup on
+    **title + company + (salary band or posting date)**, and pull the JD when either differs. When
+    the two postings turn out to be the same req, log it as a re-surface and say so; the cost of a
+    wasted pull is one call, and the cost of the miss is a posting nobody ever judges.
+    **Corollary:** an agency posting that returns with a *fresh posting date* is the signal to look,
+    not the signal to skip — which is the inverse of how a fresh date reads at a direct employer.
+
 ---
 
 ## Verdict vocabulary
