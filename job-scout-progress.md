@@ -116,13 +116,22 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
 
 ## Verdict vocabulary
 
-`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate` · `expired`
+`shortlisted` · `skipped` · `dropped by checker` · `already applied` · `reopen-when-flagship-ships` · `re-evaluate` · `expired` · `unreachable`
 
 `re-evaluate` means **seen but never judged** — the JD could not be pulled, so standing decision 3 was not satisfied. It is not a soft skip: a `re-evaluate` row is a debt the next beat must clear before anything else, and it is the one verdict that title + company dedup must not skip. Used on beat 4 when the connector rate-limited mid-run (JOBSEARCH_224).
 
 `expired` means **the posting left the index before it could be judged** — searched for across several phrasings over two or more beats and not returned, while the employer is demonstrably still listing. It closes a `re-evaluate` debt without pretending a verdict was reached: it is a fact about the posting, not a judgement on the candidate, and it is the only permitted exit from `re-evaluate` other than a real verdict. A row may only be marked `expired` after **two** beats of failed retrieval, and the failed queries must be named in the row. Proposed on beat 5 for JOBSEARCH_224 (Fun Prime Technology), which has now missed two beats — held at `re-evaluate` pending this rule, since inventing the verdict to clear the queue is exactly what the debt rule forbids.
 
-**An `expired` row does not suppress a re-listing.** It records that a posting left the index — not that anyone read it — so it is the second verdict title + company dedup must not skip. If that title and company come back to the results, it is a new posting: pull the JD and judge it. Deduping against an expired row would bury a posting nobody has ever judged, which is the exact failure `re-evaluate` exists to prevent, arriving through the exit instead of the entrance.
+`unreachable` means **the posting is demonstrably live but cannot be retrieved from this environment** — every fetch route is blocked or 403s, the posting has never reached the Indeed index, and search cannot produce a requirements string that survives an unprimed query. It is the third and last exit from `re-evaluate`, and it exists because `re-evaluate` is defined as "a debt the next beat must clear before anything else" — **a debt that provably cannot be cleared is not a debt, it is a permanent standing charge on every future beat's first slot.** It is the mirror image of `expired`: `expired` says the posting left the index, `unreachable` says the posting is still there and this environment cannot reach it. Neither is a judgement on the candidate.
+
+The bar is deliberately hard, because beat 12 was right that treating "the page is blocked" as sufficient would make the `skipped`-not-`re-evaluate` precedent vacuous — every egress-blocked posting would qualify. **All five conditions must hold, in the current session:**
+1. **Two or more beats already served at `re-evaluate`.**
+2. **Liveness affirmatively proven this beat** — a canonical employer URL returned by search. This is the opposite of `expired`'s test, and it is what stops the two verdicts from ever both applying.
+3. **Every fetch route named and each shown blocked or 403 in the current session**, not carried over from a prior beat's notes.
+4. **At least three search sweeps this session with the phrasings recorded, and no sweep producing a requirements string that reproduces under a *neutral*, unprimed query.** This is the condition that keeps beat 12's objection satisfied: the environment must be shown to have exhausted *search* as well as *fetch*, so "the page is blocked" alone is still not enough.
+5. The same **non-suppression clause** as `expired`, below.
+
+**Neither an `expired` nor an `unreachable` row suppresses a re-listing.** Each records why a posting could not be read — not that anyone read it — so both are verdicts title + company dedup must not skip, alongside `re-evaluate`. If that title and company come back to the results, it is a new posting: pull the JD and judge it. Deduping against an expired row would bury a posting nobody has ever judged, which is the exact failure `re-evaluate` exists to prevent, arriving through the exit instead of the entrance.
 
 ---
 
