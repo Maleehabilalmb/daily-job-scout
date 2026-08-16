@@ -61,6 +61,43 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     against the log on title + company. Lane B postings fetched from a career page keep their URL as
     the stable key. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
     may propose rule changes but never merges them.
+    **Amendment proposed by beat 16 — the company field is not always the employer, and when it is
+    not, this rule fails silently in both directions.** Where the connector's company field names a
+    known **ATS / payroll / recruiting vendor**, take the dedup key from **the employer named in the
+    JD body** (the "About X" or "Why join X" line), with **posted date + compensation band** as the
+    tiebreaker. Known vendor today: **Rippling**. Watch for Greenhouse, Lever, Workday, BambooHR.
+    **The operational tell: two rows, same title, same location, same posted date, one of them a
+    vendor name → pull both before creating either row.**
+    *Evidence (verified by beat 16's checker on four JDs it pulled itself, not taken from the
+    draft).* (a) `JOBSEARCH_1664` returned under company **Rippling** while its body opens *"About
+    **Huntridge Labs**"* — byte-for-byte the req logged 2026-08-08 as `JOBSEARCH_652` under
+    **Huntridge Labs, LLC**: same $120–140k band, same "Code Corsairs" guild copy, same Public Trust
+    clause. Sixth appearance of one posting, first under a different employer name. (b) The cleaner
+    proof, because the two entries are **simultaneous** rather than eight days apart:
+    `JOBSEARCH_1601` (**FluidAI Medical**) and `JOBSEARCH_1602` (**Rippling**) are one req —
+    identical title "Technical Sales Specialist — Healthcare (GCC)", identical Riyadh location,
+    **identical posted date of June 25 2026**, identical SAR 135,000–150,000 band, and body text
+    matching sentence for sentence **including the same typos** ("hospital exosystems",
+    "self-directed professionals"). Both read *"Why Join **FluidAI Medical**?"*
+    *Mechanism, which makes this predictable rather than anecdotal.* The two entries differ in
+    exactly the ways two **feeds** differ, not two postings — `_1601` is `Permanent` with
+    asterisk-italic markdown and a "Preferred Experience" heading, `_1602` is `Full-time`, plain
+    text, "Desirable Experience". Rippling sells an ATS product, and postings syndicated to Indeed
+    through its applicant-tracking feed are attributed to **Rippling as the employer**. This predicts
+    that any employer on that ATS can appear under two names, and it retrospectively explains the
+    unexplained "Rippling" in beat 15's Riyadh result set.
+    *Why this is worth a rule rather than a note.* The phantom direction is merely wasteful — beat 16
+    spent a JD pull re-reading a req judged eight days earlier. **The burial direction is the one
+    standing decision 10 exists to prevent, and it arrives silently.** Every ATS-vendor-attributed
+    posting collapses into one pseudo-company, so the moment two *different* employers' reqs share a
+    common title under "Rippling" — and "Full Stack Engineer", "Solutions Engineer" and "Forward
+    Deployed Engineer" are exactly the titles this routine searches — title + company dedup drops the
+    second one and nobody ever learns it existed.
+    *Relationship to PR #8.* Beat 12's proposed standing decision 16 (agency postings need a stronger
+    dedup key than title + company) is the same failure shape from the other end: there, one employer
+    appears under many recruiter names; here, many employers appear under one vendor name. **They
+    should probably land together as one rule about the company field being untrustworthy, rather
+    than as two.** Flagged for the reviewer, not resolved here.
 11. **A posting that states no requirements has not stated a low bar — it has stated nothing.**
     Silence is not evidence, and a shortlist may not rest on the *absence* of a disqualifier. Name the
     fact-sheet line the posting affirmatively asks for; if the only argument available is "there is no
