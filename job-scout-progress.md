@@ -111,6 +111,28 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+16. **The "inclusive of" rule.** Where a requirement names a skill and extends it with *"inclusive
+    of"* / *"including"* / a similar appositive, **the appositive states the *scope* of the named
+    skill — it is not a second independent gate.** Standing decision 13 governs it: test the
+    appositive's contents one by one, each graded by its own verb. **It converts a magnitude into a
+    binary only if one of the enumerated items is itself absent outright.** Found on beat 20's keep,
+    ElevenLabs `_2161`: *"Proficiency in Python, inclusive of a deep understanding of software
+    development, software architecture, and common integration patterns."* The draft's worry was
+    that *"inclusive of"* extends the Python bar past the fact sheet's scripting-level carve-out.
+    It does not — the three enumerated items are all artifact-present, nothing binary is
+    introduced, and the only shortfall is the **depth of the Python instance**, which is beat 18's
+    Eliza case exactly.
+17. **"Strong X background" is a *field* bar when the clause names fields, and a *functional* bar
+    when the clause names a purpose. The trailing limb decides which.** Standing decision 13 rests
+    on Palantir's *"**Strong engineering background**, preferred in fields such as Computer Science,
+    Mathematics, Software Engineering, Physics, and Data Science"* — a clause that **names fields**,
+    which is why she fails it. Beat 20 found the other shape at ElevenLabs: *"Have a **strong
+    technical background** in order to help customers architect integration between our solutions
+    and their existing solutions"* terminates in a **purposive** limb, which sets a functional
+    standard met by shipped integrations, so no hedge is required and rule 4 is not triggered.
+    **Without this distinction, standing decision 13 reads as a blanket bar on the phrase "strong X
+    background" and would have killed a posting she meets.** The draft missed the clause entirely;
+    the checker raised it and drew the line.
 
 ---
 
@@ -121,6 +143,17 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
 `re-evaluate` means **seen but never judged** — the JD could not be pulled, so standing decision 3 was not satisfied. It is not a soft skip: a `re-evaluate` row is a debt the next beat must clear before anything else, and it is the one verdict that title + company dedup must not skip. Used on beat 4 when the connector rate-limited mid-run (JOBSEARCH_224).
 
 `expired` means **the posting left the index before it could be judged** — searched for across several phrasings over two or more beats and not returned, while the employer is demonstrably still listing. It closes a `re-evaluate` debt without pretending a verdict was reached: it is a fact about the posting, not a judgement on the candidate, and it is the only permitted exit from `re-evaluate` other than a real verdict. A row may only be marked `expired` after **two** beats of failed retrieval, and the failed queries must be named in the row. Proposed on beat 5 for JOBSEARCH_224 (Fun Prime Technology), which has now missed two beats — held at `re-evaluate` pending this rule, since inventing the verdict to clear the queue is exactly what the debt rule forbids.
+
+**The location ground's "not fully remote" limb requires a read document.** Beat 19's location rule
+has two limbs — the work location falls outside the CV's UK / EU / Gulf scope, **and** the posting is
+not fully remote. The first can be read off a log row; **the second cannot**, because a fully remote
+posting is in scope wherever the employer sits. So the location ground disposes of a posting whose
+document has been read, and **it may never be used to close a `re-evaluate` row**, where by
+definition no document has been read. Beat 20's checker proposed closing the Palantir FDSE New Grad
+debt this way and made its own proposal conditional on the row fixing a location; the row's location
+column reads *"(US, per listing)"* — a **country**, not a work location — so the second limb is
+unestablished and the row was held. Using it anyway would be deciding an unread document, which is
+the failure the debt rule exists to prevent, arriving through the exit instead of the entrance.
 
 **An `expired` row does not suppress a re-listing.** It records that a posting left the index — not that anyone read it — so it is the second verdict title + company dedup must not skip. If that title and company come back to the results, it is a new posting: pull the JD and judge it. Deduping against an expired row would bury a posting nobody has ever judged, which is the exact failure `re-evaluate` exists to prevent, arriving through the exit instead of the entrance.
 
