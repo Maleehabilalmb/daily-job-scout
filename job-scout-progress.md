@@ -39,6 +39,25 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
 - No CS degree — a hard filter at some large employers regardless of portfolio.
 - **A 2009–2023 employment gap is now visible on the CV** (only the B.Ed, 2015, sits inside it). This is the accepted cost of adding the dated banking roles on 2026-08-04: the domain credibility was judged worth the exposed timeline. It is not a disqualifier and it is not something to hide or explain away in a rationale — just expect it to surface in screening.
 
+**Affirmative-sponsorship register (employers that state it in writing — standing decision 14's corollary
+requires reading the sponsorship line on every Lane B posting; this is where the answers live).** Every
+Lane B keep and near-miss for six beats was `sponsorship: unverified`, so an employer that answers the
+question in writing is worth more than any single posting and outlives the req that revealed it.
+- **n8n** (beat 6) — *"We can sponsor visas to Germany; for any other country, you need to have existing
+  right to work"* — which is simultaneously an affirmative `yes` for Germany-based reqs and an
+  affirmative `no` for its London one. The basis of standing decision 14.
+- **Anthropic** (beat 21) — *"Visa sponsorship: **We do sponsor visas!** … if we make you an offer, we
+  will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with
+  this."* Stated identically on every req sampled (London ×2, New York). **And a second employer fact
+  that matters at least as much: rule 6 never bites at Anthropic** — its Logistics block writes the
+  practical-equivalence disjunct in-house on every req: *"Minimum education: Bachelor's degree **or an
+  equivalent combination of education, training, and/or experience**"*, *"Required field of study: A
+  field relevant to the role **as demonstrated through coursework, training, or professional
+  experience**"*. Rule 6 is the log's second-highest-frequency killer; an employer that pre-empts it is
+  a standing search target, not a one-off.
+- **DeepLight AI** (beat 21, Dubai) — *"**Visa Sponsorship for the successful individual**"*, in the
+  benefits block of a banking-domain AI delivery req.
+
 **Pending evidence (update this line when it lands):** a flagship web app built specifically to demonstrate FDE capability. Not shipped yet. Once live, log the URL and repo here and re-open every posting marked `reopen-when-flagship-ships`.
 
 ---
@@ -59,7 +78,17 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     `JOBSEARCH_14` on 08-03. Treating the ID as stable makes dedup fail silently and re-shows
     everything. Log the ID anyway (it is the handle for `get_job_details` within a run), but match
     against the log on title + company. Lane B postings fetched from a career page keep their URL as
-    the stable key. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
+    the stable key. **The title half of that key is the posting's own title, not the index's.** Two
+    failure modes are now on the record and both defeat a naive title match. **(a) The index title is
+    not the posting's title.** Persistent Systems' beat-21 req is indexed as *"Consultant - United
+    Kingdom"* and its JD body reads *"Job Title: **Forward Deployment Engineer (FDE)**"* — so an FDE
+    posting can be relisted under any consulting label and re-enter clean every beat. Where the two
+    differ, log both and dedup on the JD body's title. **(b) A relabel of the same req.** Beat 20 found
+    a region relabel (BCG X's *"…Internship **UAE**"* → *"…Internship, **Middle East**"*); beat 21
+    found a prefix relabel (VAM SYSTEMS' *"AI Solutions Engineer - Banking"* → *"**Agentic** AI
+    Solutions Engineer - Banking"*, body text and every requirement identical). Treat a title that
+    differs from a logged one only by a prepended qualifier, a region label or a seniority word as the
+    same posting until the JD says otherwise — and say which row it matches. Found by beat 2, which proposed it as PR #1; landed by hand, since the routine
     may propose rule changes but never merges them.
 11. **A posting that states no requirements has not stated a low bar — it has stated nothing.**
     Silence is not evidence, and a shortlist may not rest on the *absence* of a disqualifier. Name the
@@ -111,6 +140,27 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+
+16. **A stated eligibility gate is a carrying ground; standing decision 5 governs silence only.**
+    Rule 5 forbids inferring `sponsorship: no` from a posting that says nothing — most say nothing, and
+    filtering on silence would empty the list. It does **not** require shortlisting a posting whose own
+    text excludes her. The distinction is the difference between an absence and a statement, and it has
+    now decided four rows across two beats: Catena Clearing's *"**US only**, no sponsorship available"*,
+    Lacura's *"**Applicants must already be eligible to work in the UAE.** Visa sponsorship is not
+    provided"* — which is not even a flag but **a screening question on the application form**
+    (*"Are you eligible to work in the UAE **without** employer-provided visa sponsorship? Yes/No"*) —
+    Deliveroo's *"**Applicants must be authorised to work in the U.K.**"*, and beat 20's micro1
+    (*"Remote **(requires relocating to DC area)**"*). **Three riders.** *(i)* Prefer the limb that is
+    not about sponsorship where the posting gives you one: Catena's *"US only"* is beat 19's location
+    ground with both limbs satisfied on the document's own text, which is cleaner and costs nothing.
+    *(ii)* **The gate must be in the document.** A residency or work-authorisation condition you know
+    from the world but the posting does not state is not this rule — beat 21's `_2320` is the edge case,
+    where the posting stated *"not fundable"* and the funding regime supplied the content, and the
+    checker's own fallback for anyone who thinks that step is one too far was *"hold and ask the
+    employer"*, never a shortlist. *(iii)* **A training-funding or eligibility gate is not a sponsorship
+    verdict.** Log it as the gate it is; do not record `sponsorship: no` unless the posting says so.
+    Related trap, from the same beat: Janus Henderson's *"will not maintain existing or **sponsor** new
+    **industry registrations or licenses**"* is about FCA registrations, not visas.
 
 ---
 
