@@ -57,13 +57,26 @@ the standing decisions (the rules you judge by), and the log of every job ever s
 actually says, not a remembered profile.
 
 **STEP 2 — Search two lanes.**
+
+**One title per query — never concatenate title synonyms.** The connector **intersects** a query
+string's terms rather than unioning them, so one empty term zeroes the whole result. `forward
+deployed engineer solutions engineer` against Islamabad returned 0 for **fourteen consecutive
+beats**; run singly, `forward deployed engineer` returns 0 (genuinely absent from that market) but
+`solutions engineer` returns 10 — the live half of the lane was hidden behind the empty half.
+Every count this log records for a concatenated query is suspect, the Gulf and UK cells included,
+because those were only ever searched in the concatenated form. **A 0 is evidence about the query
+until the query has been run in its simplest form** (standing decision 16).
+
 - **Lane A (Indeed connector):** Forward Deployed Engineer, solutions engineer, implementation and
   delivery engineer, and junior full-stack (TypeScript / React / Next.js) roles — Pakistan and remote.
+  **Run each of those titles as its own query.** Also search by **product name** — `Next.js`,
+  `Firebase`, `n8n` against Islamabad each returned 7–10 where the title queries returned 0.
 - **Lane B (international FDE track):** forward-deployed and delivery-engineering roles at Palantir,
   Databricks, Google Cloud (PSO / Customer Engineering), Salesforce and comparable employers.
   Databricks is in and Datadog / Deloitte are out because it has genuinely FDE-shaped delivery roles.
-  Run this **through the Indeed connector, searched by city** (`forward deployed engineer solutions
-  engineer`, `implementation consultant onboarding engineer SaaS`): London and Manchester for the UK,
+  Run this **through the Indeed connector, searched by city**, one title per query (`forward deployed
+  engineer`; `solutions engineer`; `implementation consultant`; `onboarding engineer`): London and
+  Manchester for the UK,
   Dubai / Abu Dhabi / Riyadh for the Gulf, plus remote US. **Do not search remote GB** — it returns 0
   across phrasings while the same intent against London returns the live UK FDE market, and the Gulf
   went unsearched for four beats although the CV names it a relocation target (standing decision 12).

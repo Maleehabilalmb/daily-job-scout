@@ -111,6 +111,50 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+16. **One title per query — never concatenate title synonyms.** The connector **intersects** a query
+    string's terms rather than unioning them, so a single empty term zeroes the entire result.
+    `forward deployed engineer solutions engineer` against Islamabad returned **0 for fourteen
+    consecutive beats**; run singly against the same index on beat 22, `forward deployed engineer`
+    returned **0** (that title really is absent from the Pakistani market) but `solutions engineer`
+    returned **10**. The live half of the lane had been hidden behind the empty half for fourteen
+    beats, and three postings were pulled and judged off the corrected query inside the beat that
+    found it. The same defect makes **every count this log has ever recorded for a concatenated
+    query suspect**, including the Gulf and UK cells, which have only ever been searched in the
+    concatenated form. Standing decision 14's employer/product-name remedy remains correct and
+    productive — but it was treating a symptom, and the symptom had a cause. **Corollary:** a query
+    returning 0 is evidence about the *query* until it has been run in its simplest form; only a
+    bare, single-term query licenses the conclusion that a market is empty.
+17. **A clause is graded by the register its body sits in, not by the mood of its label — and where an
+    author grades some items and not others, the ungraded ones are required.** Two readings, both from
+    the beat-22 kill, both extensions of rule 13's "the verb decides" into the inside of a bullet.
+    *(a) The intra-document register test.* Where a requirements block mixes **dispositional** bodies
+    ("You move fast in ambiguous environments") with **evidential** ones ("1+ year of *experience*",
+    "*Proven track record in* …"), read the body, not the label. heyData's bullet was labelled
+    "Thrive in Fast-Paced Environments" — a disposition — but its body read "**Proven track record
+    in** a high-performance environment", which sits in the same evidential register as the two
+    clauses the draft already treated as real bars. **The verb was *proven*, not *thrive*.**
+    *(b) Ungraded-among-graded is an affirmative statement of requirement.* Where an author marks
+    optional items optional **repeatedly in one block** — heyData did it three times ("German is a
+    *plus*", "Data Literacy *(Plus)*", "Domain Exposure *(Plus)*") — and leaves one item unmarked,
+    the unmarked item is required. **This converts a rule-11 silence problem into a reading:** the
+    absence of a "plus" tag is not an argument from silence when the same author tags everything
+    else. Corollary, and the reason the kill was clean: **a head that names a *kind* cannot fail by
+    magnitude.** "1+ year" states a quantity; "a high-performance environment, such as …" states a
+    class, and beat 21 governs — category failure is binary, and there is no such thing as 3.5
+    months of a category.
+18. **The drop side is the dangerous side, because nothing downstream catches it.** A wrong keep is
+    caught by the checker; a wrong drop is caught by nobody, and it costs her a job rather than an
+    application. The standing decisions are mostly written against fit-favourable errors, which is
+    correct as far as it goes and structurally incomplete. **The specific move to refuse: reading a
+    permissive clause as an exclusion.** Beat 22's draft cited LIQID's "you don't need to code" as a
+    role-family disqualifier; in full it reads "You have a genuine affinity for technology: **you
+    don't need to code**, but you enjoy digging into technical topics" — the posting **lowering** a
+    bar, not erecting one. That is reading a bar **up**, which beat 20 already forbids out of a
+    Responsibilities block, and it produces false negatives **silently**. Rule 13 has now been
+    committed in both directions in this log — fit-favourably on beat 20's `_2161`, drop-favourably
+    on beat 22's `_2480` — so **treat the symmetry as the default expectation, not the exception:
+    every reading rule here cuts both ways, and a drop assembled from stacked grounds should be
+    narrowed to the one clause that actually carries it.**
 
 ---
 
