@@ -111,6 +111,45 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+16. **When a requirements block mixes registers, grade EVERY clause — not the contested one.** Beat
+    22's intra-document register test says a clause is graded by the register its **body** sits in,
+    not the mood of its **label**. Beat 23 found the way to misuse it: Proxima Fusion's `WHO YOU ARE`
+    has seven bullets, five with dispositional bodies (*"you **thrive**"*, *"choose mission over
+    ego"*, *"see feedback as a gift"*) and **two evidential** ones (*"have a **proven** 'builder'
+    mindset"*, *"have a **solid foundation in** Python and a **deep understanding of** LLM APIs"*).
+    The draft ran the test on the dispositional bullet it needed cleared, ruled correctly that
+    *"Startup-Ready"* is not heyData's *"proven track record"* clause — and never tested the
+    evidential bullet that convicts. **Running the test only where it helps is not applying the test;
+    it is selecting an outcome with it.** Where a block mixes registers, enumerate the bullets and
+    classify each one before ruling on any. Corollary, from the same posting: **a duty is not a
+    requirement, but duties calibrate the level at which a required clause must be held.** Cloud Run,
+    Vertex AI and vector databases sat in the duties block and could not carry the drop — the
+    requirements block itself graded GCP down to *"ideally"* — but *"solid foundation in Python"* in a
+    role that deploys Python microservices is a production-Python bar. **The duties do not carry the
+    drop; they close the escape route from it.**
+17. **A restrictive modifier narrows the head noun; it does not replace it.** Beat 23's Arhpez
+    posting required *"**Fresh graduate** with up to 6 months of experience in QA/Software Testing"*.
+    The draft read that as a pure experience **ceiling** — a bar she clears — by keeping the modifier
+    and discarding the head. *Fresh graduate* is the head; *with up to 6 months* restricts it. She is
+    a career changer with a B.Com (2001), a B.Ed, an MSc and three years teaching; beat 4 already
+    ruled on this exact word at `JOBSEARCH_85` (Mehdi Technologies) — *"here it **deflates her into a
+    category she is not in**"* — and asserting she satisfies it would breach rule 7. **The posting
+    would have cleared had it read *"0–6 months of experience"*, and that one-word difference is the
+    whole ruling.** This is rule 13's "the verb decides" applied to the noun phrase: read what the
+    clause is **about** before reading what it **allows**.
+18. **Never query `remote` on this connector, for any country — always search by city.** Standing
+    decision 12 established this for GB (`forward deployed engineer` / remote GB → 0 across
+    phrasings while London returns the live market). Beat 23 established the same for PK:
+    `solutions engineer` / **remote PK → 0** while the identical query returns **10** against
+    Islamabad, **10** against Lahore and **10** against Karachi. Every `remote` query in this log's
+    history has returned zero or garbage, in three countries now. It is a connector defect, not a
+    market fact, and rediscovering it once per geography has cost a query in most beats since beat 4.
+    **Corollary — the cell you test a lane in decides what the test proves.** Beat 22 told beat 23 to
+    give the Playwright/test-automation lane one more geography before retiring it; the draft chose
+    **remote US**, a cell that is broken by this very rule *and* requires a visa she will never get
+    for a junior QA role. The checker re-aimed the same lane at **Islamabad** and it returned
+    fourteen postings across two queries, most previously unseen, in her home city. **A lane retired
+    on its least informative cell has not been tested.**
 
 ---
 
