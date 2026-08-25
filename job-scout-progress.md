@@ -17,7 +17,7 @@ A shortlist rationale must be traceable to a line below.
 - **OpenClaw Prep** — Android app in React Native / Expo (EAS) / TypeScript / Firebase (Auth, Firestore), offline-first sync, in-app purchases, runtime circuit breaker. Release build in closed testing on Google Play Console.
 - **Self-hosted automation platform** — n8n on Oracle Cloud ARM64 via Docker, Tailscale Funnel for HTTPS without a public IP, plus a seven-phase runbook another engineer reproduced unaided.
 - **Browser automation & QA harness** — Playwright regression suite across mobile/tablet/desktop breakpoints, exposed to agents over MCP.
-- **Agent Factory Prep** — deployed MCQ learning app, 39 topics, scoring + progress dashboard.
+- **Agent Factory Prep** — deployed MCQ learning app, **39 topics across three chapters**, per-topic scoring, **answer explanations** and a progress dashboard. (Corrected on 2026-08-25: the sheet had carried only "39 topics, scoring + progress dashboard" while the CV states the fuller wording, and beat 25's draft cited the CV detail in a rationale that the checker could not verify against this spine. Where the sheet is thinner than the CV, a rationale reaching past it is reaching for something nobody has checked.)
 - **Cybersecurity intern, Progree** (Jun–Jul 2026) — nmap/Wireshark recon, STRIDE threat models, NIST SP 800-61 incident-response plan.
 
 **Stack:** TypeScript, JavaScript, Python · React, Next.js (App Router), React Native, Expo, Tailwind · Node.js, REST, Firebase, JSON Schema · Playwright · Docker, Vercel, Oracle Cloud ARM64, Linux, Tailscale, CI/CD, Git & GitHub · MCP, agent orchestration, n8n · spec-driven development, runbooks, requirements elicitation.
@@ -100,6 +100,34 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     single sentence in a benefits block can decide a whole geography, so read the sponsorship line
     on every Lane B posting even when the requirements have already dropped it — the drop is about
     the posting, the sponsorship line is about the employer, and the second outlives the first.
+16. **A posting can have no required tier at all, and beat 24's tier-position test then returns
+    "unrunnable" — which is a drop, not a tie.** Beat 25's Asite posting (Junior Consultant,
+    Riyadh) stated its entire requirements block as seven bullets headed *"**Desired** Skills &
+    Experience"*: communication, multiple priorities, attention to detail, work ethic,
+    presentation, AEC background *"an advantage but not a must"*, willingness to travel. **Zero
+    technical requirements, and even the soft skills only "desired".** Where rule 11 asks whether
+    the posting states requirements at all, this rule says what to do when the answer is no:
+    her best artifact does not sit in the *optional* tier, it sits **nowhere in the posting's
+    stated wants**, so the test that decides keep from drop cannot be run and the posting is a
+    rule-11 drop. The draft's affirmative ask — *"an understanding of cloud-based and Software as
+    a Service solutions"* — cleared rule 11's letter and failed rule 4, in the checker's words:
+    *"a descriptor no artifact is needed to satisfy. Her portfolio is not what answers it; having
+    used software is."* **Cross-beat comparator, which is why this is a rule:** beat 4 killed a
+    £120–160k London FDE posting for naming no degree, no years and no stack, and rule 11 was
+    written out of that kill. Asite named no degree, no years and no stack. Same shape, opposite
+    ruling — the only distinguishing features were the word "junior" and a geography on the
+    relocation line, which is scarcity reasoning. **Corollary, and the distinction that saved the
+    same beat's one keep:** a posting that names no *technology* is not the same as a posting that
+    states *nothing*. Forterro named six technical **activities** (installing, configuring,
+    testing, data builds, deployment processes, structured testing) and zero technologies — it
+    gates on activities, and activities are what the fact sheet has artifacts for.
+17. **Rule 11 forbids absence as *support*, not only as *foundation*.** Rule 11 has always barred
+    resting a shortlist on the absence of a disqualifier. Beat 25 found the softer form: the draft
+    wrote of a Riyadh posting *"no Arabic requirement is stated, unlike Salesforce's Arabic-speaking
+    Riyadh reqs"* — not as the whole case, but as a supporting clause beside real ones, and the
+    checker struck it. **Test every rationale this way: if deleting a clause because it says only
+    "the posting does not say X" weakens the case, the case was partly built on silence.**
+
 15. **A rare keyword is not a shortlist engine.** Beat 6's draft put up two borderlines and both
     rested on n8n, which appears on the fact sheet and had shown up on roughly one posting in the
     previous five beats combined — then on five of the eight judged in one run. In every case the
