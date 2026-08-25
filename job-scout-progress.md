@@ -111,6 +111,40 @@ Banking-operations domain literacy is a genuine differentiator for fintech and f
     scarcity of jobs. Corollary from the same beat: **a doubt stated in the draft's own frictions
     section about a *graded* clause is not a friction to disclose, it is the verdict** — conceding
     the failing clause and shortlisting anyway is the beat-4 Linux Recruit pattern.
+16. **Sort the beat's postings by shape and rule same-shape postings together.** Rule 8 has always
+    been enforced posting-by-posting, and that cannot see scarcity reasoning, because each rationale
+    reads fine in isolation. Beat 24's draft dropped `_2769` SolutionInn on *"2+ years of experience
+    in test automation"* and kept `_2888` IRG Global on *"1–3 years of experience in software quality
+    assurance or testing"* — the same posting in two costumes (Lahore-area QA automation, an ungraded
+    professional-years floor, a non-blocking degree line, Playwright reachable) — and **no clause
+    distinguished them**, while SolutionInn's *required* block mapped to the fact sheet more directly.
+    Two identical postings ruled two ways is proof of scarcity reasoning that no single rationale can
+    hide. Group before drafting, rule each group together, and if a pair must split, name the clause
+    that splits it.
+17. **The tier-position test decides keep from drop, and it gives rule 15 the positive form it has
+    never had.** Rule 15 says what kills a shortlist; this says what saves one. Ask one question per
+    posting: *where does her single best artifact sit in this posting's own tier structure, and is
+    anything in the required tier evidenced?*
+    - Best artifact in the **optional** tier **and** the required tier unevidenced → **drop.** Beat
+      24's `_2888` IRG Global: Playwright under *"Preferred Skills"*, required tier is professional
+      QA years plus *"databases"*, neither on the fact sheet. Same shape: `_2906` KEA design, `_2884`
+      Aikido.
+    - Best artifact in the **optional** tier **but** the required tier satisfied by shipped work →
+      **keep.** Beat 24's `_2894` Beyond Universe: Playwright is *"highly beneficial"*, but
+      *"software development and programming skills"* is ungraded and shipped twice over.
+    It is faster than clause-by-clause reading and it was the discriminator between the beat's
+    strongest keep and its weakest.
+18. **Read the JD body for location, never the connector's header field.** Indeed's location column
+    is the connector's metadata, not the employer's statement, and on beat 24 it contradicted the
+    body on **two of thirteen** judged postings — `_2829` Contour, header *"Islamabad"* against
+    *"The position will be based at our **Karachi** office"*, and `_2822` Voxtron, header *"Dubai"*
+    against *"This position is for Voxtron Solutions LLP, **Kochi**"* plus *"No remote Job
+    Opportunity, only work from the Office"*. **Both discrepancies ran in the direction that
+    flattered the shortlist**, which is the direction nothing downstream catches. Corollary, drawn
+    the same beat and in both directions: **a location the employer states is a gate; a location the
+    candidate must travel to is logistics.** Elchai's *"Are you currently in the UAE?"* and Voxtron's
+    Kochi office are dispositive; a Lahore on-site posting is a relocation call she may make, and
+    beat 24's delivered `_2894` turned on that distinction.
 
 ---
 
